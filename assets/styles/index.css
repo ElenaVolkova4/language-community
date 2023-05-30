@@ -1,1 +1,1 @@
-h1{color:aqua}
+html{position:relative;box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}body{min-width:320px;min-height:100vh;font-family:"Noto Sans",sans-serif;font-weight:300;font-size:16px;background-color:#e4dfd8;line-height:1.4}h1{text-transform:uppercase}h2{text-transform:uppercase}.section{height:600px;padding:30px}
