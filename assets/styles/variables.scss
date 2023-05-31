@@ -2,31 +2,20 @@
 $background: #e4dfd8;
 
 // медиа-запросы
-@mixin sm {
-  @media (min-width: 576px) {
-    @content;
-  }
-}
-@mixin md {
-  @media (min-width: 768px) {
+@mixin mobile {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
 
-@mixin lg {
-  @media (min-width: 1024px) {
+@mixin tablet {
+  @media screen and (max-width: 991px) {
     @content;
   }
 }
 
-@mixin xl {
-  @media (min-width: 1240px) {
-    @content;
-  }
-}
-
-@mixin xxl {
-  @media (min-width: 1600px) {
+@mixin decktop {
+  @media screen and (max-width: 1200px) {
     @content;
   }
 }
