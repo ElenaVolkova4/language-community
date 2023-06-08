@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="./assets/images/logo2.png" type="img/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,19 +22,17 @@
     <title>Language community</title>
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      Бургер-меню
+      <h1 class="header__title">World language community!!!!</h1>
+      <p class="header__text">
+        Изучай язык, открывай новые возможности, улучшай качество жизни
+      </p>
+
+      <!-- <img src="./assets/images/earth.png" alt="" loading="lazy" /> -->
+      <img class="header__img" src="./assets/images/handsearth.jpg" alt="" />
+    </header>
     <main>
-      <header class="header">
-        Бургер-меню
-        <h1 class="header__title">World language community!!!!</h1>
-        <p class="header__text">
-          Изучай язык, открывай новые возможности, улучшай качество жизни
-        </p>
-
-        <!-- <img src="./assets/images/earth.png" alt="" loading="lazy" /> -->
-        <img class="header__img" src="./assets/images/handsearth.jpg" alt="" />
-      </header>
-
       <section class="section section--white">
         <div>
           <h2 class="about__title">
@@ -51,21 +55,192 @@
           alt="Фотография"
         />
       </section>
-      <section class="section section--white">
-        <p>
-          Моя история знакомства с&nbsp;иностранными языками началаь еще
-          в&nbsp;школе им.Пабло Неруды. И&nbsp;продолжилась на&nbsp;кафедре
-          романо-германских языков в&nbsp;Московском Государственном
-          Педагогическом Университете
-        </p>
-        <img
-          class="img"
-          src="./assets/images/photos/IMG_2956.jpg"
-          alt="Фотография"
-        />
-      </section>
-      <section class="section"></section>
-      <section class="section"></section>
+
+      <div class="green-border">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section class="section section--white">
+                <p>
+                  Моя история знакомства с&nbsp;иностранными языками началась
+                  еще в&nbsp;школе им.Пабло Неруды. И&nbsp;продолжилась
+                  на&nbsp;кафедре романо-германских языков в&nbsp;Московском
+                  Государственном Педагогическом Университете
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  Прошла двухмесячную языковую практику на&nbsp;острове Майорка,
+                  Испания
+                </p>
+                <p>
+                  Там я&nbsp;погрузилась в&nbsp;среду языка, смогла убрать
+                  &laquo;языковой барьер&raquo;, начать свободно разговаривать
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  Дальше я&nbsp;продолжила углублять знания испанского,
+                  но&nbsp;уже в&nbsp;области коммерции и маркетинга, работая
+                  в&nbsp;испанской консалтинговой компании в&nbsp;Москве. Нашими
+                  клиентами были: Торговая Палата Испании, испанские компании,
+                  посольства Испании и&nbsp;Латиноамериканских стран
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  В&nbsp;течение всего активного периода практики языка,
+                  я&nbsp;параллельно преподавала на&nbsp;курсах для взрослых
+                  и&nbsp;детей.
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  Наиболее богатый опыт преподавания я&nbsp;приобрела поработав
+                  учителем в&nbsp;школе и&nbsp;в&nbsp;Институте Международных
+                  Отношений Национального Исследовательского Ядерного
+                  Университета, а&nbsp;также предоставляя корпоративное обучение
+                  сотрудникам финансовой компании ID Finance
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  Испанский язык позволил мне принять участие во&nbsp;множестве
+                  сфер: в&nbsp;культуре, в&nbsp;туризме, в&nbsp;бизнесе,
+                  и&nbsp;даже в&nbsp;производстве
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  В&nbsp;посольстве я&nbsp;приобрела большой опыт письменного,
+                  устного, последовательного и&nbsp;синхронного перевода
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="section section--white">
+                <p>
+                  Также я&nbsp;активно практиковала английский язык, применяя
+                  в&nbsp;профессиональной деятельности. Изучала его
+                  в&nbsp;школе, в университете в&nbsp;качестве второго
+                  иностранного. Обладаю дипломом Министерства экономического
+                  развития, Высших курсов ин.яз&nbsp;&mdash; Английский язык.
+                </p>
+                <p>
+                  в&nbsp;2019 году прошла двухнедельную практику языка
+                  в&nbsp;школе EnglishToGo в&nbsp;Лондоне
+                </p>
+                <img
+                  class="img"
+                  src="./assets/images/photos/IMG_2956.jpg"
+                  alt="Фотография"
+                />
+              </section>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Предыдущий</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Следующий</span>
+          </button>
+        </div>
+      </div>
+
+      <section class="section"><h3>Миссии и цели проекта</h3></section>
       <section class="section"></section>
       <section class="section"></section>
       <section class="section"></section>
@@ -77,5 +252,20 @@
     </main>
 
     <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
