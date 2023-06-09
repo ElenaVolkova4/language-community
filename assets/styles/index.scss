@@ -17,9 +17,10 @@ body {
 
   font-family: "Noto Sans", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 1.4;
   background-color: $white;
+  color: $green;
 
   // @include lg {
   //   font-size: 20px;
@@ -81,14 +82,11 @@ body {
 
   display: flex;
   gap: 30px;
-
-  font-size: 22px;
 }
 
 .section--white {
   background-color: $white;
   color: $green;
-  border-bottom: 1px solid $green;
 }
 
 .section--green {
@@ -127,9 +125,54 @@ body {
 
 .green-border {
   border: 1px solid green;
+  border-radius: 20px;
 }
 
 // слайдер
 .carousel-item {
-  padding: 150px;
+  padding: 60px;
+  font-size: 22px;
+
+  .carousel-item__content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    height: 600px;
+
+    .carousel-item__content-description {
+      width: 60%;
+    }
+
+    .carousel-item__content-title {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .carousel-item__content-text {
+      font-size: 30px;
+    }
+
+    .carousel-item__content-img {
+      width: 40%;
+
+      img {
+        width: 90%;
+      }
+    }
+  }
+
+  .carousel-item__border-bottom {
+    display: flex;
+    justify-content: center;
+    div {
+      width: 400px;
+      border-bottom: 1px solid $green;
+    }
+    // text-align: center;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5%;
 }
