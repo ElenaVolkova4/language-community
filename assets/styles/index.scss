@@ -19,21 +19,22 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.4;
+  background-color: $white;
 
   // @include lg {
   //   font-size: 20px;
   // }
 }
 
+.container {
+  max-width: 1340px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .header {
-  // height: 600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 30px;
-
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
@@ -42,9 +43,19 @@ body {
     rgba(0, 149, 255, 1) 100%
   );
 
+  .header__content {
+    // height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 30px;
+  }
+
   .header__title {
     text-transform: uppercase;
-    color: white;
+    color: rgb(155, 43, 43);
     letter-spacing: 6px;
 
     font-size: 40px;
@@ -93,10 +104,32 @@ body {
 }
 
 .about {
+  .about__description {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about__title {
+      text-decoration: underline;
+      text-align: center;
+    }
+
+    .about__subtitle {
+      text-align: center;
+    }
+
+    .about__text {
+    }
+  }
 }
-.about__title {
-  text-decoration: underline;
-}
+
 .green-border {
   border: 1px solid green;
+}
+
+// слайдер
+.carousel-item {
+  padding: 150px;
 }
