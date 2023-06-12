@@ -176,3 +176,14 @@ body {
 .carousel-control-prev {
   width: 5%;
 }
+
+.footer {
+  background: url(./../images/mount.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+
+  .background-icon {
+    width: 100px;
+  }
+}
