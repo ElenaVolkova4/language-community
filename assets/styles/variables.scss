@@ -4,8 +4,8 @@ $green: #315812;
 $white: #e4dfd8;
 
 // медиа-запросы
-@mixin mobile {
-  @media screen and (max-width: 767px) {
+@mixin decktop {
+  @media screen and (max-width: 1200px) {
     @content;
   }
 }
@@ -16,8 +16,8 @@ $white: #e4dfd8;
   }
 }
 
-@mixin decktop {
-  @media screen and (max-width: 1200px) {
+@mixin mobile {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }

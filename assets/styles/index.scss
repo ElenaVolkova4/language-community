@@ -22,9 +22,9 @@ body {
   background-color: $white;
   color: $green;
 
-  // @include lg {
-  //   font-size: 20px;
-  // }
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .container {
@@ -80,8 +80,8 @@ body {
   // height: 800px;
   padding: 30px;
 
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 }
 
 .section--white {
@@ -97,12 +97,17 @@ body {
   font-size: 22px;
 }
 
-.img {
-  width: 40%;
-}
+// .img {
+//   width: 40%;
+// }
 
 .about {
+  display: flex;
+  gap: 30px;
+
   .about__description {
+    width: 60%;
+
     display: flex;
     gap: 40px;
     flex-direction: column;
@@ -118,7 +123,15 @@ body {
       text-align: center;
     }
 
-    .about__text {
+    // .about__text {
+    // }
+  }
+
+  .about__img {
+    width: 40%;
+
+    img {
+      width: 100%;
     }
   }
 }
@@ -177,13 +190,81 @@ body {
   width: 5%;
 }
 
+.program {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: url(./../images/bg/bg-rocks.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $white;
+
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+
+    .program__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding: 30px;
+
+      background-color: #af7a43;
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      &-number {
+        position: absolute;
+        top: -10%;
+        left: -5%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+
+        border-radius: 50%;
+        background-color: $white;
+        color: #af7a43;
+      }
+    }
+  }
+}
+
 .footer {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background: url(./../images/mount.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
 
+  &__wrapper {
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  p {
+    text-align: center;
+  }
+
   .background-icon {
-    width: 100px;
+    width: 50px;
   }
 }
