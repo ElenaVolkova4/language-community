@@ -120,16 +120,23 @@ body {
 }
 .carousel-item .carousel-item__content .carousel-item__content-description {
   width: 60%;
+  text-align: center;
+}
+.carousel-item .carousel-item__content .carousel-item__content-description--narrow {
+  width: 40%;
 }
 .carousel-item .carousel-item__content .carousel-item__content-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
 }
 .carousel-item .carousel-item__content .carousel-item__content-text {
-  font-size: 30px;
+  font-size: 25px;
 }
 .carousel-item .carousel-item__content .carousel-item__content-img {
   width: 40%;
+}
+.carousel-item .carousel-item__content .carousel-item__content-img--wide {
+  width: 60%;
 }
 .carousel-item .carousel-item__content .carousel-item__content-img img {
   width: 90%;

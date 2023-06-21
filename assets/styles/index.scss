@@ -154,19 +154,28 @@ body {
 
     .carousel-item__content-description {
       width: 60%;
+      text-align: center;
+
+      &--narrow {
+        width: 40%;
+      }
     }
 
     .carousel-item__content-title {
-      font-size: 40px;
+      font-size: 30px;
       font-weight: bold;
     }
 
     .carousel-item__content-text {
-      font-size: 30px;
+      font-size: 25px;
     }
 
     .carousel-item__content-img {
       width: 40%;
+
+      &--wide {
+        width: 60%;
+      }
 
       img {
         width: 90%;
