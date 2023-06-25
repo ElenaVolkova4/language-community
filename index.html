@@ -10,7 +10,11 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="./assets/images/icon.png" type="img/png" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo_WLC-with-title.png"
+      type="img/png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,10 +34,9 @@
           Изучай язык, открывай новые возможности, улучшай качество жизни
         </p>
 
-        <!-- <img src="./assets/images/earth.png" alt=""  /> -->
         <img
           class="header__img"
-          src="./assets/images/LOGO_WLC.png"
+          src="./assets/images/logo_WLC.png"
           alt="Логотип"
           loading="lazy"
         />
@@ -59,7 +62,7 @@
         <div class="about__img">
           <img
             class=""
-            src="./assets/images/photos/IMG_2969.jpeg"
+            src="./assets/images/photos/about-me.jpeg"
             alt="Фотография"
             loading="lazy"
           />
@@ -67,10 +70,11 @@
       </section>
 
       <!-- слайдер -->
-      <div class="green-border container">
+      <div class="container">
         <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+          <div class="carousel-inner green-border">
+            <!-- слайд 1 -->
+            <div class="carousel-item">
               <div class="carousel-item__content">
                 <div class="carousel-item__content-description">
                   <p class="carousel-item__content-title">
@@ -83,31 +87,17 @@
                 <div class="carousel-item__content-img">
                   <img
                     class="img"
-                    src="./assets/images/photos/IMG_2956.jpg"
+                    src="./assets/images/photos/slide1.1.jpg"
                     alt="Фотография"
                     loading="lazy"
                   />
                 </div>
-                <div class="ribbon-2"></div>
-              </div>
-              <div class="carousel-item__border-bottom"><div></div></div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-item__content">
-                <div class="image-box">
-                  <div class="border"></div>
-                  <img src="./assets/images/photos/IMG_8536.jpeg" />
-                  <div class="image-content">
-                    <h3 class="image-header">Ночная роза</h3>
-                    <p>Ночная роза — удивительное растение...</p>
-                  </div>
-                </div>
-
-                новый
+                <div class="slider-ribbon"></div>
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
             </div>
 
+            <!-- слайд 2 -->
             <div class="carousel-item">
               <div class="carousel-item__content">
                 <div
@@ -127,14 +117,16 @@
                 >
                   <img
                     class="img"
-                    src="./assets/images/photos/IMG_8691.jpg"
+                    src="./assets/images/photos/slide1.2.jpg"
                     alt="Фотография"
                     loading="lazy"
                   />
                 </div>
+                <div class="slider-ribbon"></div>
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
             </div>
+            <!-- слайд 3 -->
             <div class="carousel-item">
               <div class="carousel-item__content">
                 <div
@@ -156,15 +148,17 @@
                 >
                   <img
                     class="img"
-                    src="./assets/images/photos/IMG_8536.jpeg"
+                    src="./assets/images/photos/slide1.3.jpeg"
                     alt="Фотография"
                     loading="lazy"
                   />
                 </div>
+                <div class="slider-ribbon"></div>
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
             </div>
-            <div class="carousel-item">
+            <!-- слайд 4 -->
+            <div class="carousel-item active">
               <div class="carousel-item__content">
                 <div
                   class="carousel-item__content-description carousel-item__content-description--narrow"
@@ -175,11 +169,29 @@
                   </p>
                 </div>
                 <div
-                  class="carousel-item__content-img carousel-item__content-img--wide"
+                  class="carousel-item__content-img carousel-item__content-img--wide slide1-4"
                 >
                   <img
                     class="img"
-                    src="./assets/images/photos/IMG_8536.jpeg"
+                    src="./assets/images/photos/slide1.4.1.jpg"
+                    alt="Фотография"
+                    loading="lazy"
+                  />
+                  <img
+                    class="img"
+                    src="./assets/images/photos/slide1.4.2.jpg"
+                    alt="Фотография"
+                    loading="lazy"
+                  />
+                  <img
+                    class="img"
+                    src="./assets/images/photos/slide1.4.3.jpg"
+                    alt="Фотография"
+                    loading="lazy"
+                  />
+                  <img
+                    class="img"
+                    src="./assets/images/photos/slide1.4.4.JPG"
                     alt="Фотография"
                     loading="lazy"
                   />
@@ -187,7 +199,7 @@
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
             </div>
-
+            <!-- слайд 5 -->
             <div class="carousel-item">
               <div class="carousel-item__content">
                 <div class="carousel-item__content-description">
@@ -202,9 +214,68 @@
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
             </div>
+            <!-- слайд 6 -->
             <div class="carousel-item">
               <div class="carousel-item__content">
-                <div class="carousel-item__content-description"></div>
+                <div class="carousel-item__content-description">
+                  Испанский язык позволил мне принять участие во&nbsp;множестве
+                  сфер: в&nbsp;культуре, в&nbsp;туризме, в&nbsp;бизнесе,
+                  и&nbsp;даже в&nbsp;производстве
+                </div>
+                <div class="carousel-item__content-img"></div>
+              </div>
+              <div class="carousel-item__border-bottom"><div></div></div>
+            </div>
+            <!-- слайд 7 -->
+            <div class="carousel-item">
+              <div class="carousel-item__content">
+                <div class="carousel-item__content-description">
+                  Испанский язык позволил мне принять участие во&nbsp;множестве
+                  сфер: в&nbsp;культуре, в&nbsp;туризме, в&nbsp;бизнесе,
+                  и&nbsp;даже в&nbsp;производстве
+                </div>
+                <div class="carousel-item__content-img"></div>
+              </div>
+              <div class="carousel-item__border-bottom"><div></div></div>
+            </div>
+            <!-- слайд 8 -->
+            <div class="carousel-item">
+              <div class="carousel-item__content">
+                <div class="carousel-item__content-description">
+                  В&nbsp;течение всего активного периода практики языка
+                  я&nbsp;параллельно преподавала на&nbsp;курсах для взрослых
+                  и&nbsp;детей
+                </div>
+                <div class="carousel-item__content-img"></div>
+              </div>
+              <div class="carousel-item__border-bottom"><div></div></div>
+            </div>
+            <!-- слайд 9 -->
+            <div class="carousel-item">
+              <div class="carousel-item__content">
+                <div class="carousel-item__content-description">
+                  Наиболее богатый опыт преподавания я&nbsp;приобрела поработав
+                  учителем в&nbsp;школе и&nbsp;в&nbsp;Институте Международных
+                  Отношений Национального Исследовательского Ядерного
+                  Университета, а&nbsp;также предоставляя корпоративное обучение
+                  сотрудникам финансовой компании ID&nbsp;Finance
+                </div>
+                <div class="carousel-item__content-img"></div>
+              </div>
+              <div class="carousel-item__border-bottom"><div></div></div>
+            </div>
+            <!-- слайд 10 -->
+            <div class="carousel-item">
+              <div class="carousel-item__content">
+                <div class="carousel-item__content-description">
+                  Также я&nbsp;активно практиковала английский язык, применяя
+                  в&nbsp;профессиональной деятельности. Изучала его
+                  в&nbsp;школе, в&nbsp;университете в&nbsp;качестве второго
+                  иностранного. Обладаю дипломом Министерства экономического
+                  развития, Высших курсов ин.яз&nbsp;&mdash; Английский язык.
+                  в&nbsp;2019 году прошла двухнедельную практику языка
+                  в&nbsp;школе EnglishToGo в&nbsp;Лондоне
+                </div>
                 <div class="carousel-item__content-img"></div>
               </div>
               <div class="carousel-item__border-bottom"><div></div></div>
@@ -424,8 +495,15 @@
         <div class="background-icon">
           <img
             class="img"
-            src="./assets/images/six_pointed_star2.svg"
+            src="./assets/images/six_pointed_star-white.svg"
             alt="Иконка звезды"
+            loading="lazy"
+          />
+          <img
+            width="200"
+            class="img"
+            src="./assets/images/logo_WLC-with-title.png"
+            alt="Логотип"
             loading="lazy"
           />
         </div>

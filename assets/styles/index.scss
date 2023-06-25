@@ -145,6 +145,7 @@ body {
 .carousel-item {
   padding: 60px;
   font-size: 22px;
+  overflow: hidden;
 
   .carousel-item__content {
     display: flex;
@@ -164,10 +165,26 @@ body {
     .carousel-item__content-title {
       font-size: 30px;
       font-weight: bold;
+
+      @include tablet {
+        font-size: 25px;
+      }
+
+      @include mobile {
+        font-size: 16px;
+      }
     }
 
     .carousel-item__content-text {
       font-size: 25px;
+
+      @include tablet {
+        font-size: 18px;
+      }
+
+      @include mobile {
+        font-size: 12px;
+      }
     }
 
     .carousel-item__content-img {
@@ -204,19 +221,31 @@ body {
   background-color: #303926;
 }
 
-/* Верхний правый угол */
-.ribbon-2 {
-  width: 200px;
-  padding: 16px;
+/* Полоса на слайде верхний правый угол */
+.slider-ribbon {
+  width: 638px;
+  padding: 69px;
   position: absolute;
-  text-align: center;
-  color: #f0f0f0;
-  top: 30px;
-  right: -60px;
+  top: 103px;
+  right: -144px;
   transform: rotate(45deg);
-  background-color: #39d;
+  background-color: $green;
+  opacity: 0.6;
+  z-index: -1;
 }
 
+// индивидуальные стили слайдов
+.slide1-4 {
+  display: flex;
+  gap: 4px;
+
+  img {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+// ===================================================
 .program {
   // height: 600px;
   display: flex;
@@ -227,6 +256,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: $white;
+
+  h2 {
+    text-align: center;
+  }
 
   &__wrapper {
     display: flex;
