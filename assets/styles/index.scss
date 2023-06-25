@@ -204,6 +204,19 @@ body {
   background-color: #303926;
 }
 
+/* Верхний правый угол */
+.ribbon-2 {
+  width: 200px;
+  padding: 16px;
+  position: absolute;
+  text-align: center;
+  color: #f0f0f0;
+  top: 30px;
+  right: -60px;
+  transform: rotate(45deg);
+  background-color: #39d;
+}
+
 .program {
   // height: 600px;
   display: flex;
