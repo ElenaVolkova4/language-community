@@ -56,7 +56,7 @@ body {
 
   .header__title {
     text-transform: uppercase;
-    color: #f31919;
+    color: #2895d6;
     letter-spacing: 6px;
     font-weight: 600;
     font-size: 40px;
@@ -184,8 +184,14 @@ body {
     align-items: center;
     height: 600px;
 
-    @include tablet {
-      height: 400px;
+    // @include tablet {
+    //   height: auto;
+    // }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+      justify-content: center;
     }
 
     // @include mobile {
@@ -198,6 +204,10 @@ body {
 
       &--narrow {
         width: 40%;
+      }
+
+      @include mobile {
+        width: 100%;
       }
     }
 
@@ -227,10 +237,20 @@ body {
     }
 
     .carousel-item__content-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 40%;
+
+      @include mobile {
+        width: 100%;
+      }
 
       &--wide {
         width: 60%;
+        @include mobile {
+          width: 100%;
+        }
       }
 
       img {
@@ -293,9 +313,32 @@ body {
     top: -15px;
     right: -155px;
   }
+
+  @include mobile {
+    padding: 55px;
+    top: 424px;
+    right: -65px;
+  }
 }
 
 // ===================================================
+// Миссии и цели
+.mission__item {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    width: 50%;
+  }
+}
+
+// ===================================================
+// Программы
 .program {
   // height: 600px;
   display: flex;
@@ -377,6 +420,26 @@ body {
   }
 }
 
+// Контакты
+
+.contacts {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    color: #315812;
+    font-weight: 600;
+  }
+}
+
+.contacts-icons-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+// Футер
 .footer {
   height: 900px;
   display: flex;
@@ -406,10 +469,14 @@ body {
   }
 
   .background-icon {
-    width: 50px;
+    width: 70px;
+
+    img {
+      width: 100%;
+    }
 
     @include mobile {
-      width: 20px;
+      width: 50px;
     }
   }
 }
