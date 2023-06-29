@@ -86,11 +86,7 @@ body {
 }
 
 .section {
-  // height: 800px;
   padding: 30px;
-
-  // display: flex;
-  // gap: 30px;
 }
 
 .section--white {
@@ -105,10 +101,6 @@ body {
   color: $white;
   font-size: 22px;
 }
-
-// .img {
-//   width: 40%;
-// }
 
 // Обо мне
 
@@ -141,7 +133,6 @@ body {
     }
 
     .about__title {
-      text-decoration: underline;
       text-align: center;
     }
 
@@ -156,25 +147,30 @@ body {
   .about__img {
     width: 40%;
     position: relative;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 
-    &:after {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: radial-gradient(
-        50% 50%,
-        hsla(0, 0%, 100%, 0) 50%,
-        $white 100%
-      );
-    }
+    //виньетка
+    // &:after {
+    //   position: absolute;
+    //   content: "";
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+
+    // background: radial-gradient(
+    //   72% 72%,
+    //   hsla(0, 0%, 100%, 0) 78%,
+    //   $white 99%
+    // );
+
+    // box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    // }
 
     img {
       width: 100%;
 
-      border-radius: 50%;
+      // border-radius: 50%;
       max-width: 100%;
       height: auto;
       display: block;
@@ -278,6 +274,7 @@ body {
 
       img {
         width: 90%;
+        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
       }
     }
   }
@@ -554,7 +551,8 @@ body {
     gap: 30px;
   }
 
-  p {
+  p,
+  h2 {
     text-align: center;
   }
 

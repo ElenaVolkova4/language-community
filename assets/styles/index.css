@@ -121,7 +121,6 @@ body {
   }
 }
 .about .about__description .about__title {
-  text-decoration: underline;
   text-align: center;
 }
 .about .about__description .about__subtitle {
@@ -130,19 +129,10 @@ body {
 .about .about__img {
   width: 40%;
   position: relative;
-}
-.about .about__img:after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(50% 50%, hsla(0, 0%, 100%, 0) 50%, #e4dfd8 100%);
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 .about .about__img img {
   width: 100%;
-  border-radius: 50%;
   max-width: 100%;
   height: auto;
   display: block;
@@ -241,6 +231,7 @@ body {
 }
 .carousel-item .carousel-item__content .carousel-item__content-img img {
   width: 90%;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 .carousel-item .carousel-item__border-bottom {
   display: flex;
@@ -462,7 +453,8 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-.footer p {
+.footer p,
+.footer h2 {
   text-align: center;
 }
 .footer .background-icon {
