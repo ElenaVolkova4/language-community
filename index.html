@@ -71,7 +71,7 @@
 
       <!-- слайдер -->
       <div class="container">
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide about__slider">
           <div class="carousel-inner green-border">
             <!-- слайд 1 -->
             <div class="carousel-item active">
@@ -480,9 +480,102 @@
           </div>
         </div>
       </section>
-      <section class="section container">
-        <h2>Кейсы и отзывы</h2>
+
+      <!-- Отзывы -->
+      <section class="section feedback">
+        <div class="container">
+          <h2>Кейсы и отзывы</h2>
+
+          <div id="feedback-slider" class="carousel slide feedback__slider">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-item__content">
+                  <img
+                    src="./assets/images/icons/icon-woman.png"
+                    class="img"
+                    alt="Иконка девушки"
+                  />
+                  <h3>Имя Фамилия</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                    suscipit voluptate et perferendis assumenda corporis eaque
+                    corrupti exercitationem. Hic repellendus a architecto
+                    cupiditate provident sapiente nemo in, expedita iure,
+                    praesentium voluptatum aliquam quae illo error harum eveniet
+                    vel quas at, omnis tempora. Fugit nihil sapiente
+                    consequuntur maiores molestias reiciendis quisquam.
+                  </p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="carousel-item__content">
+                  <img
+                    src="./assets/images/icons/icon-man.png"
+                    class="img"
+                    alt="Иконка девушки"
+                  />
+                  <h3>Имя Фамилия</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                    suscipit voluptate et perferendis assumenda corporis eaque
+                    corrupti exercitationem.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-item__content">
+                  <img
+                    src="./assets/images/icons/icon-man.png"
+                    class="img"
+                    alt="Иконка девушки"
+                  />
+                  <h3>Имя Фамилия</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                    suscipit voluptate et perferendis assumenda corporis eaque
+                    corrupti exercitationem. Hic repellendus a architecto
+                    cupiditate provident sapiente nemo in, expedita iure,
+                    praesentium voluptatum aliquam quae illo error harum eveniet
+                    vel quas at, omnis tempora. Fugit nihil sapiente
+                    consequuntur maiores molestias reiciendis quisquam. Hic
+                    repellendus a architecto cupiditate provident sapiente nemo
+                    in, expedita iure, praesentium voluptatum aliquam quae illo
+                    error harum eveniet vel quas at, omnis tempora. Fugit nihil
+                    sapiente consequuntur maiores molestias reiciendis quisquam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#feedback-slider"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#feedback-slider"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+        </div>
       </section>
+
+      <!-- Контакты  -->
       <section class="section container contacts">
         <h2 class="contacts__title">Мои контакты</h2>
 
@@ -545,5 +638,6 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/scripts/index.js"></script>
   </body>
 </html>

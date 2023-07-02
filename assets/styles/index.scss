@@ -87,6 +87,10 @@ body {
 
 .section {
   padding: 30px;
+
+  @include mobile {
+    padding: 20px 0;
+  }
 }
 
 .section--white {
@@ -188,146 +192,126 @@ body {
 }
 
 // слайдер
-.carousel-item {
-  padding: 60px;
-  font-size: 22px;
-  overflow: hidden;
+.about__slider {
+  .carousel-item {
+    padding: 60px;
+    font-size: 22px;
+    overflow: hidden;
 
-  @include tablet {
-    padding: 20px;
-  }
-
-  .carousel-item__content {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    height: 600px;
-
-    // @include tablet {
-    //   height: auto;
-    // }
-
-    @include mobile {
-      flex-direction: column;
-      gap: 10px;
-      justify-content: center;
+    @include tablet {
+      padding: 20px;
     }
 
-    // @include mobile {
-    //   height: 300px;
-    // }
-
-    .carousel-item__content-description {
-      width: 60%;
-      text-align: center;
-
-      &--narrow {
-        width: 40%;
-      }
-
-      @include mobile {
-        width: 100%;
-      }
-    }
-
-    .carousel-item__content-title {
-      font-size: 30px;
-      font-weight: bold;
-
-      @include tablet {
-        font-size: 25px;
-      }
-
-      @include mobile {
-        font-size: 16px;
-      }
-    }
-
-    .carousel-item__content-text {
-      font-size: 25px;
-
-      @include tablet {
-        font-size: 18px;
-      }
-
-      @include mobile {
-        font-size: 12px;
-      }
-    }
-
-    .carousel-item__content-img {
+    .carousel-item__content {
       display: flex;
+      gap: 30px;
       align-items: center;
-      justify-content: center;
-      width: 40%;
+      height: 600px;
+
+      // @include tablet {
+      //   height: auto;
+      // }
 
       @include mobile {
-        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
       }
 
-      &--wide {
+      // @include mobile {
+      //   height: 300px;
+      // }
+
+      .carousel-item__content-description {
         width: 60%;
+        text-align: center;
+
+        &--narrow {
+          width: 40%;
+        }
+
         @include mobile {
           width: 100%;
         }
       }
 
-      img {
-        width: 90%;
-        box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+      .carousel-item__content-title {
+        font-size: 30px;
+        font-weight: bold;
+
+        @include tablet {
+          font-size: 25px;
+        }
+
+        @include mobile {
+          font-size: 16px;
+        }
+      }
+
+      .carousel-item__content-text {
+        font-size: 25px;
+
+        @include tablet {
+          font-size: 18px;
+        }
+
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+
+      .carousel-item__content-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+
+        @include mobile {
+          width: 100%;
+        }
+
+        &--wide {
+          width: 60%;
+          @include mobile {
+            width: 100%;
+          }
+        }
+
+        img {
+          width: 90%;
+          box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .carousel-item__border-bottom {
+      display: flex;
+      justify-content: center;
+      div {
+        width: 400px;
+        border-bottom: 1px solid $green;
       }
     }
   }
 
-  .carousel-item__border-bottom {
-    display: flex;
-    justify-content: center;
-    div {
-      width: 400px;
-      border-bottom: 1px solid $green;
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(../images/icons/green-arrow2.png);
+    opacity: 0.7;
+    transform: rotate(180deg);
+
+    &:hover {
+      opacity: 1;
     }
-    // text-align: center;
   }
 
-  // индивидуальные стили слайдов
-  // .slide1-4 {
-  //   display: flex;
-  //   gap: 4px;
-  //   flex-wrap: wrap;
-
-  //   div {
-  //     width: 200px;
-  //   }
-
-  //   img {
-  //     width: 100%;
-  //   }
-  // }
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  width: 5%;
-}
-
-.carousel-control-prev-icon {
-  background-image: url(../images/icons/green-arrow2.png);
-  opacity: 0.7;
-  transform: rotate(180deg);
-
-  &:hover {
-    opacity: 1;
+  .carousel-control-next-icon {
+    background-image: url(../images/icons/green-arrow2.png);
   }
-}
-
-.carousel-control-next-icon {
-  background-image: url(../images/icons/green-arrow2.png);
-  // transform: rotate(180deg);
-}
-
-.mission {
-  color: $white;
-  background-color: #303926;
 }
 
 /* Полоса на слайде верхний правый угол */
@@ -358,6 +342,11 @@ body {
 
 // ===================================================
 // Миссии и цели
+.mission {
+  color: $white;
+  background-color: $background-dark;
+}
+
 .mission__phrase {
   display: flex;
   gap: 40px;
@@ -417,6 +406,7 @@ body {
     // list-style-image: url(./../images/marker5.png); /* Путь к изображению маркера-ромашки*/
     list-style: none;
     padding: 0;
+    margin-bottom: 0;
 
     li {
       margin-top: 50px;
@@ -439,7 +429,7 @@ body {
   }
 }
 
-// ===================================================
+// ===========================================================================
 // Программы
 .program {
   // height: 600px;
@@ -522,6 +512,46 @@ body {
   }
 }
 
+// ===========================================================================
+// Отзывы
+
+.feedback {
+  text-align: center;
+
+  color: $white;
+  background-color: $background-dark;
+
+  .feedback__slider {
+    .carousel-item {
+      height: 500px;
+    }
+
+    .carousel-item__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding: 20px 80px;
+
+      @include tablet {
+        padding: 10px 40px;
+      }
+
+      @include mobile {
+        padding: 10px 30px;
+      }
+    }
+  }
+  .img {
+    width: 80px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 5%;
+  }
+}
+
+// ===========================================================================
 // Контакты
 
 .contacts {
