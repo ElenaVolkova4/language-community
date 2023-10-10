@@ -1,11 +1,13 @@
 // цвета
-$green: #315812;
-$white: #e4dfd8;
-$background-dark: #303926;
+$black: #000000;
+$blue: #081685;
+$green: #3f4924;
+$red: #c20000;
+$white: #ffffff;
 
 // медиа-запросы
 @mixin decktop {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1600px) {
     @content;
   }
 }
@@ -17,7 +19,7 @@ $background-dark: #303926;
 }
 
 @mixin mobile {
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 320px) {
     @content;
   }
 }
