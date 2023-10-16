@@ -20,16 +20,23 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: $black;
+  background-color: $white;
 
   // @include tablet {
   //   font-size: 18px;
   // }
 }
 
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 .container {
   max-width: 1110px;
-  // padding-right: 15px;
-  // padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -38,6 +45,7 @@ body {
   padding-top: 51px;
 
   background-image: url("../images/bg/bg-header.png");
+  background-repeat: no-repeat;
 
   .header__image {
     position: relative;
@@ -59,7 +67,6 @@ body {
   }
 
   .header__text {
-    margin: 0;
     padding-bottom: 27px;
 
     text-align: center;
@@ -70,48 +77,179 @@ body {
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+
+    @include tablet {
+      font-size: 26px;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
   }
 }
 
 .menu {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 8px;
   justify-content: space-around;
   padding: 30px;
+  // margin: 0;
+
+  max-width: 1110px;
+
+  margin-right: auto;
+  margin-left: auto;
 
   list-style-type: none;
   background: $white;
 
+  .menu__item {
+    padding: 12px;
+
+    &:hover {
+      border-bottom: 1px solid $blue;
+    }
+  }
+
   .menu__link {
     cursor: pointer;
     text-decoration: none;
-    color: $black;
-
-    &:hover {
-      color: $blue;
-    }
+    color: $blue;
   }
 }
 
 .about-me {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "img title"
+    "img name"
+    "img experience"
+    "img teacher";
+  column-gap: 30px;
+  row-gap: 24px;
 
   padding: 50px;
 
+  @include tablet {
+    column-gap: 16px;
+    row-gap: 16px;
+
+    grid-template-areas:
+      "img title"
+      "img name"
+      "img experience"
+      "teacher teacher";
+  }
+
+  @include mobile {
+    padding: 30px;
+
+    row-gap: 8px;
+
+    grid-template-areas:
+      "img title"
+      "img name"
+      "experience experience"
+      "teacher teacher";
+  }
+
   .about-me__img-wrapper {
+    grid-area: img;
     max-width: 347px;
     flex-shrink: 0;
+
+    @include tablet {
+      max-width: 234px;
+    }
+
+    @include mobile {
+      max-width: 143px;
+    }
 
     img {
       width: 100%;
     }
   }
 
-  .about-me__text-wrapper {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
+  .about-me__title {
+    grid-area: title;
+
+    margin: 0;
+    //шрифт!!!!!!!!!!!!!!!!!!!!!!!!
+    color: $blue;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 150%;
+
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  .about-me__text {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    @include tablet {
+      font-size: 16px;
+    }
+
+    @include mobile {
+      font-size: 14px;
+    }
+  }
+
+  //сетка
+  .about-me__text-name {
+    grid-area: name;
+  }
+  .about-me__text-experience {
+    grid-area: experience;
+  }
+  .about-me__text-teacher {
+    grid-area: teacher;
+  }
+
+  // .about-me__text-wrapper {
+  //   display: flex;
+  //   gap: 30px;
+  //   flex-direction: column;
+  // }
+}
+
+.quote {
+  background-image: url(../images/bg/bg-q1.png);
+  background-repeat: no-repeat;
+
+  p {
+    padding: 130px 16px;
+
+    text-align: center;
+    color: $white;
+
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+    // font-family: Yandex Serif Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include tablet {
+      padding: 115px 46px;
+
+      font-size: 28px;
+    }
+
+    @include mobile {
+      padding: 77px 32px;
+
+      font-size: 18px;
+    }
   }
 }

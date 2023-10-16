@@ -3,7 +3,7 @@ $black: #000000;
 $blue: #081685;
 $green: #3f4924;
 $red: #c20000;
-$white: #ffffff;
+$white: #f8f0ec;
 
 // медиа-запросы
 @mixin decktop {
@@ -19,7 +19,7 @@ $white: #ffffff;
 }
 
 @mixin mobile {
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
