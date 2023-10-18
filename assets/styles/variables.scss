@@ -23,3 +23,13 @@ $white: #f8f0ec;
     @content;
   }
 }
+
+// шрифты
+$main-font: "Noto Sans", sans-serif;
+
+@font-face {
+  font-family: "Yandex Serif";
+  src: url("../fonts/Yandex_Sans/YandexSansDisplay-Regular.ttf");
+}
+
+$yandex-font: "Yandex Serif", sans-serif;

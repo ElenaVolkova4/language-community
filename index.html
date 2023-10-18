@@ -31,13 +31,13 @@
         <div class="header__image">
           <img
             class="header__img-title"
-            src="/assets/images/title.png"
+            src="./assets/images/title.png"
             alt="Логотип"
             loading="lazy"
           />
           <img
             class="header__img-logo"
-            src="/assets/images/logo_WLC.png"
+            src="./assets/images/logo_WLC.png"
             alt="Логотип"
             loading="lazy"
           />
@@ -46,31 +46,83 @@
           Изучай язык, открывай новые возможности, улучшай качество жизни
         </h1>
       </div>
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link" title="">о&nbsp;проекте</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link" title="Программы">программы</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link" title="Возможности">возможности</a>
-        </li>
-        <li class="menu__item">
-          <a href="#" class="menu__link" title="Отзывы">отзывы</a>
-        </li>
-        <li class="menu__item">
-          <a href="" class="menu__link" title="Контакты">контакты</a>
-        </li>
-      </ul>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" title="">о&nbsp;проекте</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" title="Программы">программы</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" title="Возможности">возможности</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link" title="Отзывы">отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a href="" class="menu__link" title="Контакты">контакты</a>
+          </li>
+        </ul>
+        <div class="menu-mobile">
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33"
+              height="20"
+              viewBox="0 0 33 20"
+              fill="none"
+            >
+              <path d="M0 2H32.5" stroke="#081685" stroke-width="3" />
+              <path d="M0 10H32.5" stroke="#081685" stroke-width="3" />
+              <path d="M0 18H16.25H32.5" stroke="#081685" stroke-width="3" />
+            </svg>
+          </button>
+          <ul class="menu-mobile__list">
+            <svg
+              class="menu-mobile__btn-close"
+              width="30"
+              height="30"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
+              <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
+            </svg>
+            <li class="menu__item">
+              <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="">о&nbsp;проекте</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Программы">программы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Возможности">возможности</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Отзывы">отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link" title="Контакты">контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section id="about-me" class="about-me container">
         <div class="about-me__img-wrapper">
-          <img src="./assets/images/about-me-img.png" alt="Фотография" />
+          <img
+            src="./assets/images/about-me-img.png"
+            alt="Фотография"
+            loading="lazy"
+          />
         </div>
         <h2 class="about-me__title">¡Hola!</h2>
         <p class="about-me__text about-me__text-name">
@@ -119,7 +171,49 @@
           <img
             src="./assets/images/photos/mission.png"
             alt="Фотография в Посольстве"
+            loading="lazy"
           />
+        </div>
+      </section>
+      <section class="quote quote--third">
+        <div class="container">
+          <p>
+            &laquo;Для того, чтобы уверенно себя чувствовать на&nbsp;иностранном
+            языке с&nbsp;нуля&nbsp;&mdash; необходимо около трёх лет
+            еженедельной практики. Воплотите свою мечту
+            в&nbsp;жизнь&nbsp;&mdash; начните сейчас&raquo;
+          </p>
+        </div>
+      </section>
+      <section class="quote quote--fourth">
+        <div class="container">
+          <p>
+            &laquo;Язык теснейшим образом связан с&nbsp;мышлением, и&nbsp;его
+            изучение позволяет развивать коммуникативные навыки
+            и&nbsp;аналитические способности&raquo;
+          </p>
+        </div>
+      </section>
+      <section class="quote quote--fifth">
+        <div class="container">
+          <p>
+            &laquo;Б&oacute;льшее понимание новой культуры позволяет также
+            осознать свою&raquo;
+          </p>
+        </div>
+      </section>
+      <section class="quote quote--sixth">
+        <div class="container">
+          <p>
+            &laquo;Изучение иностранного языка расширяет мировоззрение, убирает
+            барьеры, недоверие и&nbsp;страх между людьми...&raquo;
+          </p>
+
+          Знакомство с преподавателем
+          <p>
+            &laquo;...открывает новые миры, и&nbsp;даёт возможности проживать
+            яркую и&nbsp;интересную жизнь&raquo;
+          </p>
         </div>
       </section>
     </main>
