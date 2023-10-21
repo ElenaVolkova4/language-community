@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/styles/normalize.css" />
     <link rel="stylesheet" href="assets/styles/index.css" />
     <title>Language community</title>
@@ -32,12 +36,12 @@
           <img
             class="header__img-title"
             src="./assets/images/title.png"
-            alt="Логотип"
+            alt="Слоган"
             loading="lazy"
           />
           <img
             class="header__img-logo"
-            src="./assets/images/logo_WLC.png"
+            src="./assets/images/logo.png"
             alt="Логотип"
             loading="lazy"
           />
@@ -154,7 +158,48 @@
           </p>
         </div>
       </section>
-      <section>Слайдер</section>
+      <section class="about-me-slider">
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide my-slide">
+                <p class="my-slide__text">
+                  Моя история знакомства с&nbsp;иностранными языками началась
+                  еще в&nbsp;школе им.Пабло Неруды. И&nbsp;продолжилась
+                  на&nbsp;кафедре романо-германских языков в&nbsp;Московском
+                  Государственном Педагогическом Университете.
+                </p>
+                <div class="my-slide__img-wrapper">
+                  <img
+                    src="./assets/images/photos/my-slider/my-slider-1.png"
+                    alt="Моя фотография"
+                    class="my-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide my-slide">
+                <p class="my-slide__text">
+                  Прошла двухмесячную языковую практику на&nbsp;острове Майорка,
+                  Испания. Там я&nbsp;погрузилась в&nbsp;среду языка, смогла
+                  убрать &laquo;языковой барьер&raquo;, начать свободно
+                  разговаривать.
+                </p>
+                <div class="my-slide__img-wrapper">
+                  <img
+                    src="./assets/images/photos/my-slider/my-slider-2.png"
+                    alt="Фотография с Майорки, Испания"
+                    class="my-slide__img"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
       <section class="quote quote--second">
         <div class="container">
           <p>
@@ -246,6 +291,7 @@
       integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
   </body>
 </html>

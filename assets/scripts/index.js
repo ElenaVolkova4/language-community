@@ -24,17 +24,7 @@ menuBtnClose.addEventListener("click", () => {
   mobileMenu.classList.add("hidden");
 });
 
-// закрытие меню при клике на любую другую область
-// document.addEventListener("click", (e) => {
-//   console.log("f");
-//   if (!mobileMenu.contains(e.target && e.target !== menuBtn)) {
-//     mobileMenu.classList.remove("show");
-//     mobileMenu.classList.add("hidden");
-//   }
-// });
-
 // закрытие меню при клике на любую область за его пределами
-
 document.addEventListener("click", (event) => {
   const target = event.target;
   console.log("f");
@@ -42,4 +32,17 @@ document.addEventListener("click", (event) => {
     mobileMenu.classList.remove("show");
     mobileMenu.classList.add("hidden");
   }
+});
+
+// слайдер Обо мне
+
+const swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
