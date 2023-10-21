@@ -139,6 +139,7 @@ p {
     margin-left: auto;
 
     button {
+      position: relative;
       background: none;
       border: none;
     }
@@ -147,20 +148,38 @@ p {
 
 .menu-mobile__list {
   position: absolute;
+  right: -20px;
+  top: 0;
+
+  width: 300px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  gap: 8px;
   padding: 0;
   padding: 20px;
-  // padding: 20px;
+
+  z-index: 9;
+  transform: translateY(-15%);
+  transition: opacity 0.5s, transform 0.5s;
 
   background: $white;
   border: 1px solid $blue;
   text-align: center;
 }
 
+.show {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .menu-mobile__btn-close {
   margin-left: auto;
+  cursor: pointer;
 }
 
 .about-me {

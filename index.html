@@ -70,6 +70,7 @@
         <div class="menu-mobile">
           <button>
             <svg
+              class="menu-mobile__btn"
               xmlns="http://www.w3.org/2000/svg"
               width="33"
               height="20"
@@ -80,38 +81,42 @@
               <path d="M0 10H32.5" stroke="#081685" stroke-width="3" />
               <path d="M0 18H16.25H32.5" stroke="#081685" stroke-width="3" />
             </svg>
+            <ul class="menu-mobile__list hidden">
+              <svg
+                class="menu-mobile__btn-close"
+                width="30"
+                height="30"
+                viewBox="0 0 60 60"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
+                <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
+              </svg>
+              <li class="menu__item">
+                <a href="#about-me" class="menu__link" title="Обо мне"
+                  >¡Hola!</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" title="">о&nbsp;проекте</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" title="Программы">программы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" title="Возможности"
+                  >возможности</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link" title="Отзывы">отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="" class="menu__link" title="Контакты">контакты</a>
+              </li>
+            </ul>
           </button>
-          <ul class="menu-mobile__list">
-            <svg
-              class="menu-mobile__btn-close"
-              width="30"
-              height="30"
-              viewBox="0 0 60 60"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
-              <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
-            </svg>
-            <li class="menu__item">
-              <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link" title="">о&nbsp;проекте</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link" title="Программы">программы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link" title="Возможности">возможности</a>
-            </li>
-            <li class="menu__item">
-              <a href="#" class="menu__link" title="Отзывы">отзывы</a>
-            </li>
-            <li class="menu__item">
-              <a href="" class="menu__link" title="Контакты">контакты</a>
-            </li>
-          </ul>
         </div>
       </nav>
     </header>
