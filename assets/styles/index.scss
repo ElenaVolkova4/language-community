@@ -473,6 +473,11 @@ p {
   padding-top: 88px;
   padding-bottom: 85px;
 
+  @include tablet {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   @include mobile {
     padding-top: 64px;
     padding-bottom: 67px;
@@ -534,11 +539,34 @@ p {
 .reasons__content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "img-left reasons-list img-right";
   column-gap: 30px;
   align-items: end;
+
+  position: relative;
+
+  // background-color: aqua;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img-left reasons-list";
+    align-items: start;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 24px;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+      "img-left img-right"
+      "reasons-list reasons-list";
+  }
 }
 
 .reasons__list {
+  grid-area: reasons-list;
+
   @include mobile {
     gap: 20px;
   }
@@ -549,6 +577,10 @@ p {
     gap: 47px;
 
     list-style-type: none;
+
+    @include mobile {
+      gap: 16px;
+    }
   }
 
   li {
@@ -570,5 +602,33 @@ p {
 .reasons__img-wrapper {
   img {
     width: 100%;
+  }
+}
+
+.reasons__img-wrapper--left {
+  grid-area: img-left;
+
+  @include tablet {
+    max-width: 206px;
+  }
+
+  @include mobile {
+    max-width: auto;
+  }
+}
+
+.reasons__img-wrapper--right {
+  grid-area: img-right;
+
+  @include tablet {
+    position: absolute;
+    max-width: 206px;
+    top: 167px;
+    left: 120px;
+  }
+
+  @include mobile {
+    position: static;
+    max-width: auto;
   }
 }
