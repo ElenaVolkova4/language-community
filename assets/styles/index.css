@@ -36,6 +36,19 @@ p {
   margin-left: auto;
 }
 
+.title {
+  font-family: "Yandex Serif", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 26px;
+  }
+}
+
 .header {
   padding-top: 51px;
   background-image: url("../images/bg/bg-header.png");
@@ -375,18 +388,6 @@ p {
   .mission {
     padding: 64px 30px;
     gap: 24px;
-  }
-}
-.mission h2 {
-  font-family: "Yandex Serif", sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-}
-@media screen and (max-width: 767px) {
-  .mission h2 {
-    font-size: 26px;
   }
 }
 .mission h3 {
