@@ -35,7 +35,6 @@ document.addEventListener("click", (event) => {
 });
 
 // слайдер Обо мне
-
 const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -47,3 +46,5 @@ const swiper = new Swiper(".mySwiper", {
   },
   autoHeight: true,
 });
+
+// слайдер Отзывы
