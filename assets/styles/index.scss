@@ -690,12 +690,6 @@ ul {
     border-bottom: 2px solid $green;
     color: $green;
   }
-
-  &--order3 {
-    @include mobile {
-      order: 3;
-    }
-  }
 }
 
 .program__wrapper {
@@ -728,8 +722,18 @@ ul {
     border: 2px solid $green;
   }
 
-  &--left {
+  &--left-text {
     text-align: left;
+  }
+
+  &--order3 {
+    @include tablet {
+      order: 3;
+    }
+
+    @include mobile {
+      order: 1;
+    }
   }
 
   ul {
@@ -739,6 +743,7 @@ ul {
 
 .program__btn {
   cursor: pointer;
+  text-align: center;
   text-decoration: none;
   color: $white;
   font-size: 20px;
@@ -749,13 +754,16 @@ ul {
 
   &--spanish {
     background-color: $blue;
+
+    &:hover {
+      background-color: rgba(8, 22, 133, 0.7);
+    }
   }
 
   &--english {
     background-color: $green;
-  }
-
-  &:hover {
-    background: rgba(8, 22, 133, 0.7);
+    &:hover {
+      background-color: rgba(63, 73, 36, 0.7);
+    }
   }
 }
