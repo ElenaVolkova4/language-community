@@ -24,7 +24,8 @@ body {
 
 h1,
 h2,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -37,6 +38,7 @@ p {
 }
 
 .title {
+  text-align: center;
   font-family: "Yandex Serif", sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -580,4 +582,106 @@ p {
     position: static;
     max-width: auto;
   }
+}
+
+.programs {
+  padding-top: 112px;
+  padding-bottom: 65px;
+}
+
+.programs__wrapper {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 991px) {
+  .programs__wrapper {
+    flex-direction: column;
+  }
+}
+.programs__wrapper .programs__spanish {
+  width: 70%;
+}
+@media screen and (max-width: 991px) {
+  .programs__wrapper .programs__spanish {
+    width: 100%;
+  }
+}
+.programs__wrapper .programs__english {
+  width: 30%;
+}
+@media screen and (max-width: 991px) {
+  .programs__wrapper .programs__english {
+    width: 100%;
+  }
+}
+
+.programs__title {
+  margin-top: 72px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: "Yandex Serif", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.programs__title--spanish {
+  border-bottom: 2px solid #081685;
+  color: #081685;
+}
+.programs__title--english {
+  border-bottom: 2px solid #3f4924;
+  color: #3f4924;
+}
+
+.program__wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.program__item {
+  width: 348px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 28px;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.program__item--spanish {
+  border: 2px solid #081685;
+}
+.program__item--english {
+  border: 2px solid #3f4924;
+}
+.program__item--left {
+  text-align: left;
+}
+.program__item ul {
+  list-style-position: inside;
+}
+
+.program__btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: #f8f0ec;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 71px;
+}
+.program__btn--spanish {
+  background-color: #081685;
+}
+.program__btn--english {
+  background-color: #3f4924;
+}
+.program__btn:hover {
+  background: rgba(8, 22, 133, 0.7);
 }/*# sourceMappingURL=index.css.map */

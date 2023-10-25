@@ -29,7 +29,8 @@ body {
 
 h1,
 h2,
-p {
+p,
+ul {
   margin: 0;
 }
 
@@ -42,6 +43,7 @@ p {
 }
 
 .title {
+  text-align: center;
   font-family: $yandex-font;
   font-size: 48px;
   font-style: normal;
@@ -630,5 +632,125 @@ p {
   @include mobile {
     position: static;
     max-width: auto;
+  }
+}
+
+.programs {
+  padding-top: 112px;
+  padding-bottom: 65px;
+}
+
+.programs__wrapper {
+  display: flex;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  .programs__spanish {
+    width: 70%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  .programs__english {
+    width: 30%;
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.programs__title {
+  margin-top: 72px;
+  margin-bottom: 24px;
+
+  text-align: center;
+
+  font-family: $yandex-font;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  &--spanish {
+  }
+
+  &--english {
+  }
+
+  &--spanish {
+    border-bottom: 2px solid $blue;
+    color: $blue;
+  }
+
+  &--english {
+    border-bottom: 2px solid $green;
+    color: $green;
+  }
+}
+
+.program__wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.program__item {
+  width: 348px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 28px;
+
+  text-align: center;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  &--spanish {
+    border: 2px solid $blue;
+  }
+
+  &--english {
+    border: 2px solid $green;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  ul {
+    list-style-position: inside;
+  }
+}
+
+.program__btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: $white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 71px;
+
+  &--spanish {
+    background-color: $blue;
+  }
+
+  &--english {
+    background-color: $green;
+  }
+
+  &:hover {
+    background: rgba(8, 22, 133, 0.7);
   }
 }
