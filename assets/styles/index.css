@@ -625,6 +625,11 @@ ul {
   font-weight: 400;
   line-height: normal;
 }
+@media screen and (max-width: 767px) {
+  .programs__title {
+    font-size: 24px;
+  }
+}
 .programs__title--spanish {
   border-bottom: 2px solid #081685;
   color: #081685;
@@ -632,6 +637,11 @@ ul {
 .programs__title--english {
   border-bottom: 2px solid #3f4924;
   color: #3f4924;
+}
+@media screen and (max-width: 767px) {
+  .programs__title--order3 {
+    order: 3;
+  }
 }
 
 .program__wrapper {

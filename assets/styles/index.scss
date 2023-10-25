@@ -658,6 +658,7 @@ ul {
 
   .programs__english {
     width: 30%;
+
     @include tablet {
       width: 100%;
     }
@@ -676,10 +677,8 @@ ul {
   font-weight: 400;
   line-height: normal;
 
-  &--spanish {
-  }
-
-  &--english {
+  @include mobile {
+    font-size: 24px;
   }
 
   &--spanish {
@@ -690,6 +689,12 @@ ul {
   &--english {
     border-bottom: 2px solid $green;
     color: $green;
+  }
+
+  &--order3 {
+    @include mobile {
+      order: 3;
+    }
   }
 }
 
