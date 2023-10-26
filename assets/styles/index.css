@@ -703,4 +703,143 @@ ul {
 }
 .program__btn--english:hover {
   background-color: rgba(63, 73, 36, 0.7);
+}
+
+.help__content {
+  display: grid;
+  grid-template-columns: 383px 1fr;
+  grid-template-areas: "text text" "help-img help-list";
+  -moz-column-gap: 67px;
+       column-gap: 67px;
+  row-gap: 48px;
+}
+@media screen and (max-width: 991px) {
+  .help__content {
+    grid-template-areas: "help-img text" "help-list help-list";
+    -moz-column-gap: 28px;
+         column-gap: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__content {
+    grid-template-columns: 1fr;
+    grid-template-areas: "help-img" "text" "help-list";
+    row-gap: 32px;
+  }
+}
+
+.help__text {
+  grid-area: text;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 767px) {
+  .help__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.help__img-wrapper img {
+  width: 100%;
+}
+
+.help__list {
+  grid-area: help-list;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (max-width: 767px) {
+  .help__list {
+    font-size: 16px;
+  }
+}
+.help__list li::before {
+  content: url("../images/icons/tick.svg");
+  display: inline-block;
+  width: 26px;
+  height: 25px;
+}
+
+.help__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.help__item--ml {
+  margin-left: 100px;
+}
+@media screen and (max-width: 991px) {
+  .help__item--ml {
+    margin-left: 95px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help__item--ml {
+    margin-left: 0;
+  }
+}
+
+.getting-know {
+  max-width: 445px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin: auto;
+  color: #000000;
+  background-color: #f8f0ec;
+}
+.getting-know .getting-know__title {
+  padding: 0;
+  color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .getting-know .getting-know__title {
+    font-size: 16px;
+  }
+}
+.getting-know .getting-know__btn {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 71px;
+  color: #f8f0ec;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #c20000;
+}
+.getting-know .getting-know__btn:hover {
+  background: rgba(194, 0, 0, 0.7);
+}
+.getting-know .getting-know__note {
+  padding: 0;
+  color: #5f5f5f;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .getting-know {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=index.css.map */

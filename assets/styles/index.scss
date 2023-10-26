@@ -762,8 +762,161 @@ ul {
 
   &--english {
     background-color: $green;
+
     &:hover {
       background-color: rgba(63, 73, 36, 0.7);
     }
+  }
+}
+
+.help__content {
+  display: grid;
+  grid-template-columns: 383px 1fr;
+  grid-template-areas:
+    "text text"
+    "help-img help-list";
+  column-gap: 67px;
+  row-gap: 48px;
+
+  @include tablet {
+    grid-template-areas:
+      "help-img text"
+      "help-list help-list";
+    column-gap: 28px;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "help-img"
+      "text"
+      "help-list";
+    row-gap: 32px;
+  }
+}
+
+.help__text {
+  grid-area: text;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @include mobile {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+.help__img-wrapper {
+  img {
+    width: 100%;
+  }
+}
+
+.help__list {
+  grid-area: help-list;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0;
+  list-style-type: none;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include mobile {
+    font-size: 16px;
+  }
+
+  li::before {
+    content: url("../images/icons/tick.svg");
+    display: inline-block;
+    width: 26px;
+    height: 25px;
+  }
+}
+
+.help__item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  &--ml {
+    margin-left: 100px;
+
+    @include tablet {
+      margin-left: 95px;
+    }
+
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+}
+
+.getting-know {
+  max-width: 445px;
+  padding: 24px 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin: auto;
+
+  color: $black;
+  background-color: $white;
+
+  .getting-know__title {
+    padding: 0;
+    color: $black;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: none;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  .getting-know__btn {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+
+    padding: 8px 71px;
+
+    color: $white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: $red;
+
+    &:hover {
+      background: rgba(194, 0, 0, 0.7);
+    }
+  }
+
+  .getting-know__note {
+    padding: 0;
+
+    color: #5f5f5f;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-shadow: none;
+  }
+
+  @include mobile {
+    font-size: 12px;
   }
 }
