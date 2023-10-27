@@ -957,9 +957,19 @@ ul {
 }
 
 .footer {
+  height: 350px;
+
   background-image: url(../images/bg/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablet {
+    height: 300px;
+  }
+
+  @include tablet {
+    height: 150px;
+  }
 }
 
 .footer__title {
@@ -980,6 +990,18 @@ ul {
 
   @include mobile {
     font-size: 18px;
+  }
+}
+
+.footer__img-wrapper {
+  max-width: 116px;
+
+  @include mobile {
+    font-size: 54px;
+  }
+
+  img {
+    width: 100%;
   }
 }
 

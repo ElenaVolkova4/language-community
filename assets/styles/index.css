@@ -878,9 +878,20 @@ ul {
 }
 
 .footer {
+  height: 350px;
   background-image: url(../images/bg/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer {
+    height: 150px;
+  }
 }
 
 .footer__title {
@@ -902,6 +913,18 @@ ul {
   .footer__title {
     font-size: 18px;
   }
+}
+
+.footer__img-wrapper {
+  max-width: 116px;
+}
+@media screen and (max-width: 767px) {
+  .footer__img-wrapper {
+    font-size: 54px;
+  }
+}
+.footer__img-wrapper img {
+  width: 100%;
 }
 
 .footer__note {
