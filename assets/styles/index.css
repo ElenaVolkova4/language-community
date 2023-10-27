@@ -800,6 +800,11 @@ ul {
   color: #000000;
   background-color: #f8f0ec;
 }
+@media screen and (max-width: 767px) {
+  .getting-know {
+    max-width: 300px;
+  }
+}
 .getting-know .getting-know__title {
   padding: 0;
   color: #000000;
@@ -839,7 +844,75 @@ ul {
   text-shadow: none;
 }
 @media screen and (max-width: 767px) {
-  .getting-know {
+  .getting-know .getting-know__note {
     font-size: 12px;
   }
+}
+
+.contacts__content {
+  padding: 33px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f0ec;
+}
+
+.contacts__title {
+  font-family: "Yandex Serif", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contacts__email {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.contacts__email:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-image: url(../images/bg/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__title {
+  color: #f8f0ec;
+  /* Shadow 1 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-family: "Yandex Serif", sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media screen and (max-width: 991px) {
+  .footer__title {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__title {
+    font-size: 18px;
+  }
+}
+
+.footer__note {
+  cursor: pointer;
+  color: #000000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.footer__note:hover {
+  color: #f8f0ec;
 }/*# sourceMappingURL=index.css.map */

@@ -872,6 +872,10 @@ ul {
   color: $black;
   background-color: $white;
 
+  @include mobile {
+    max-width: 300px;
+  }
+
   .getting-know__title {
     padding: 0;
     color: $black;
@@ -914,9 +918,81 @@ ul {
     font-weight: 400;
     line-height: 150%;
     text-shadow: none;
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+
+.contacts__content {
+  padding: 33px;
+
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $white;
+}
+
+.contacts__title {
+  font-family: $yandex-font;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contacts__email {
+  cursor: pointer;
+  text-decoration: none;
+  color: $black;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  background-image: url(../images/bg/bg-footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__title {
+  color: #f8f0ec;
+
+  // text-align: right;
+  /* Shadow 1 */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-family: $yandex-font;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include tablet {
+    font-size: 26px;
   }
 
   @include mobile {
-    font-size: 12px;
+    font-size: 18px;
+  }
+}
+
+.footer__note {
+  cursor: pointer;
+  color: $black;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+
+  &:hover {
+    color: $white;
   }
 }
