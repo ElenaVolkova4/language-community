@@ -791,18 +791,21 @@ ul {
   column-gap: 67px;
   row-gap: 48px;
 
+  margin-top: 80px;
+
   @include tablet {
     grid-template-areas:
       "help-img text"
       "help-list help-list";
     column-gap: 28px;
+    margin-top: 24px;
   }
 
   @include mobile {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "help-img"
       "text"
+      "help-img"
       "help-list";
     row-gap: 32px;
   }
@@ -823,12 +826,13 @@ ul {
 }
 
 .help__img-wrapper {
+  max-width: 383px;
+
   img {
     width: 100%;
   }
 }
-
-.help__list {
+ccvvvv help__img-wrapper .help__list {
   grid-area: help-list;
 
   display: flex;
@@ -1075,6 +1079,9 @@ ul {
 .contacts__social-ig {
   width: 65px;
   height: 65px;
+  transform: translateZ(0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 
   @include tablet {
     width: 37px;
@@ -1086,6 +1093,10 @@ ul {
     height: 50px;
   }
 
+  &:hover {
+    transform: scale(1.1);
+  }
+
   img {
     width: 100%;
   }
@@ -1094,6 +1105,8 @@ ul {
 .contacts__social-yt {
   width: 160px;
   height: 36px;
+  transition-duration: 0.3s;
+  transition-property: transform;
 
   @include tablet {
     width: 89px;
@@ -1103,6 +1116,10 @@ ul {
   @include mobile {
     width: 120px;
     height: 30px;
+  }
+
+  &:hover {
+    transform: scale(1.1);
   }
 
   img {
