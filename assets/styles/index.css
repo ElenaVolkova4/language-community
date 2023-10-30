@@ -878,7 +878,7 @@ ul {
 }
 
 .footer {
-  height: 350px;
+  height: 600px;
   background-image: url(../images/bg/bg-footer.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -938,4 +938,24 @@ ul {
 }
 .footer__note:hover {
   color: #f8f0ec;
+}
+
+.contacts {
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f8f0ec;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    flex-direction: column;
+  }
+}
+
+.contacts__title {
+  font-family: "Yandex Serif", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }/*# sourceMappingURL=index.css.map */

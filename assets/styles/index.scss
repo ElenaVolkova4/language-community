@@ -957,7 +957,7 @@ ul {
 }
 
 .footer {
-  height: 350px;
+  height: 600px;
 
   background-image: url(../images/bg/bg-footer.png);
   background-repeat: no-repeat;
@@ -1017,4 +1017,24 @@ ul {
   &:hover {
     color: $white;
   }
+}
+
+.contacts {
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $white;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.contacts__title {
+  font-family: $yandex-font;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
