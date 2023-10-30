@@ -1023,11 +1023,13 @@ ul {
   padding: 45px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   background-color: $white;
 
   @include mobile {
     flex-direction: column;
+    gap: 16px;
   }
 }
 
@@ -1037,4 +1039,60 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.contacts__links-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.contacts__social-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contacts__social-tg,
+.contacts__social-ig {
+  width: 65px;
+  height: 65px;
+
+  @include tablet {
+    width: 37px;
+    height: 37px;
+  }
+
+  @include mobile {
+    width: 50px;
+    height: 50px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.contacts__social-yt {
+  width: 160px;
+  height: 36px;
+
+  @include tablet {
+    width: 89px;
+    height: 22px;
+  }
+
+  @include mobile {
+    width: 120px;
+    height: 30px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
