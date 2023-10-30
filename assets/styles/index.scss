@@ -36,8 +36,8 @@ ul {
 
 .container {
   max-width: 1110px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -766,6 +766,19 @@ ul {
     &:hover {
       background-color: rgba(63, 73, 36, 0.7);
     }
+  }
+}
+
+.help {
+  padding-top: 104px;
+  padding-bottom: 71px;
+
+  @include tablet {
+    padding-top: 60px;
+  }
+
+  @include mobile {
+    padding-bottom: 66px;
   }
 }
 

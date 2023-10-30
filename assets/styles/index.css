@@ -31,8 +31,8 @@ ul {
 
 .container {
   max-width: 1110px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -703,6 +703,21 @@ ul {
 }
 .program__btn--english:hover {
   background-color: rgba(63, 73, 36, 0.7);
+}
+
+.help {
+  padding-top: 104px;
+  padding-bottom: 71px;
+}
+@media screen and (max-width: 991px) {
+  .help {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .help {
+    padding-bottom: 66px;
+  }
 }
 
 .help__content {
