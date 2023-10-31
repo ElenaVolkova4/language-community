@@ -27,7 +27,6 @@ menuBtnClose.addEventListener("click", () => {
 // закрытие меню при клике на любую область за его пределами
 document.addEventListener("click", (event) => {
   const target = event.target;
-  console.log("f");
   if (!mobileMenu.contains(target) && target !== menuBtn) {
     mobileMenu.classList.remove("show");
     mobileMenu.classList.add("hidden");

@@ -627,12 +627,24 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .programs__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
     font-size: 24px;
   }
 }
 .programs__title--spanish {
   border-bottom: 2px solid #081685;
   color: #081685;
+}
+@media screen and (max-width: 767px) {
+  .programs__title--spanish::after {
+    content: url("../images/icons/tick-blue.svg");
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+  }
 }
 .programs__title--english {
   border-bottom: 2px solid #3f4924;
@@ -647,7 +659,7 @@ ul {
 }
 
 .program__item {
-  width: 348px;
+  width: 337px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -657,6 +669,12 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+@media screen and (max-width: 767px) {
+  .program__item {
+    max-width: 337px;
+    width: 100%;
+  }
 }
 .program__item--spanish {
   border: 2px solid #081685;
@@ -691,6 +709,11 @@ ul {
   font-weight: 400;
   line-height: normal;
   padding: 8px 71px;
+}
+@media screen and (max-width: 767px) {
+  .program__btn {
+    padding: 8px 32px;
+  }
 }
 .program__btn--spanish {
   background-color: #081685;
@@ -766,7 +789,7 @@ ul {
   width: 100%;
 }
 
-ccvvvv help__img-wrapper .help__list {
+.help__list {
   grid-area: help-list;
   display: flex;
   flex-direction: column;
@@ -779,11 +802,11 @@ ccvvvv help__img-wrapper .help__list {
   line-height: 150%;
 }
 @media screen and (max-width: 767px) {
-  ccvvvv help__img-wrapper .help__list {
+  .help__list {
     font-size: 16px;
   }
 }
-ccvvvv help__img-wrapper .help__list li::before {
+.help__list li::before {
   content: url("../images/icons/tick.svg");
   display: inline-block;
   width: 26px;
