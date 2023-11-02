@@ -170,12 +170,18 @@
                   Государственном Педагогическом Университете.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-1.png"
-                    alt="Моя фотография"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <!-- оборачиваем все картинки тегом picture и прописываем пути
+                  картинок в зависимости от ширины экрана -->
+
+                  <picture>
+                    <source srcset="" media="(min-width:768px)" />
+                    <img
+                      src="./assets/images/photos/my-slider/my-slider-1.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -379,6 +385,7 @@
         <div class="programs__wrapper">
           <div class="programs__spanish">
             <h3 class="programs__title programs__title--spanish">Испанский</h3>
+
             <div class="program__wrapper">
               <div
                 class="program__item program__item--spanish program__item--left-text"

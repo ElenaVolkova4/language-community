@@ -681,6 +681,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
 
     margin-top: 46px;
 
@@ -697,13 +698,37 @@ ul {
         display: inline-block;
         width: 40px;
         height: 40px;
+        transition: 0.4s ease;
       }
+    }
+
+    @include mobile {
+      cursor: pointer;
     }
   }
 
   &--english {
     border-bottom: 2px solid $green;
     color: $green;
+
+    &::after {
+      @include mobile {
+        content: url("../images/icons/tick-green.svg");
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        transition: 0.4s ease;
+      }
+    }
+  }
+
+  &--spanish.open,
+  &--english.open {
+    &::after {
+      @include mobile {
+        transform: rotate(90deg);
+      }
+    }
   }
 }
 
@@ -711,8 +736,13 @@ ul {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-
   justify-content: center;
+
+  transition: 2 s;
+}
+
+.program__wrapper.close {
+  display: none;
 }
 
 .program__item {

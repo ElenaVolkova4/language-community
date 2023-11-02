@@ -630,6 +630,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 40px;
     margin-top: 46px;
     font-size: 24px;
   }
@@ -644,11 +645,31 @@ ul {
     display: inline-block;
     width: 40px;
     height: 40px;
+    transition: 0.4s ease;
+  }
+}
+@media screen and (max-width: 767px) {
+  .programs__title--spanish {
+    cursor: pointer;
   }
 }
 .programs__title--english {
   border-bottom: 2px solid #3f4924;
   color: #3f4924;
+}
+@media screen and (max-width: 767px) {
+  .programs__title--english::after {
+    content: url("../images/icons/tick-green.svg");
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s ease;
+  }
+}
+@media screen and (max-width: 767px) {
+  .programs__title--spanish.open::after, .programs__title--english.open::after {
+    transform: rotate(90deg);
+  }
 }
 
 .program__wrapper {
@@ -656,6 +677,11 @@ ul {
   gap: 30px;
   flex-wrap: wrap;
   justify-content: center;
+  transition: 2 s;
+}
+
+.program__wrapper.close {
+  display: none;
 }
 
 .program__item {

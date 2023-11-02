@@ -46,4 +46,35 @@ const swiper = new Swiper(".mySwiper", {
   autoHeight: true,
 });
 
+// Объединить в одну????????????????????????????????????
+
+// Открытие/закрытие программ
+const programSpanishTitle = document.querySelector(".programs__title--spanish");
+const programsSpanish = document.querySelector(".program__wrapper");
+programSpanishTitle.addEventListener("click", () => {
+  programSpanishTitle.classList.toggle("open");
+
+  if (programSpanishTitle.classList.contains("open")) {
+    programsSpanish.classList.remove("close");
+    programsSpanish.classList.add("show");
+  } else {
+    programsSpanish.classList.remove("show");
+    programsSpanish.classList.add("close");
+  }
+});
+
+const programEnglishTitle = document.querySelector(".programs__title--english");
+const programsEnglish = document.querySelector(".program__wrapper");
+programEnglishTitle.addEventListener("click", () => {
+  programEnglishTitle.classList.toggle("open");
+
+  if (programEnglishTitle.classList.contains("open")) {
+    programsEnglish.classList.remove("close");
+    programsEnglish.classList.add("show");
+  } else {
+    programsEnglish.classList.remove("show");
+    programsEnglish.classList.add("close");
+  }
+});
+
 // слайдер Отзывы
