@@ -598,6 +598,11 @@ ul {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 767px) {
+  .programs__wrapper {
+    gap: 0;
+  }
+}
 .programs__wrapper .programs__spanish {
   width: 70%;
 }
@@ -628,10 +633,10 @@ ul {
 @media screen and (max-width: 767px) {
   .programs__title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-top: 46px;
+    margin-top: 26px;
     font-size: 24px;
   }
 }

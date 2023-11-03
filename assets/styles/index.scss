@@ -648,6 +648,10 @@ ul {
     flex-direction: column;
   }
 
+  @include mobile {
+    gap: 0;
+  }
+
   .programs__spanish {
     width: 70%;
 
@@ -679,11 +683,11 @@ ul {
 
   @include mobile {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 40px;
 
-    margin-top: 46px;
+    margin-top: 26px;
 
     font-size: 24px;
   }

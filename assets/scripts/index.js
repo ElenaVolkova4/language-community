@@ -49,34 +49,51 @@ const swiper = new Swiper(".mySwiper", {
 // Объединить в одну????????????????????????????????????
 
 // только на мобилке!!!!!
-
+const widthMediaQuery = window.matchMedia("(max-width: 767px)").matches;
+console.log(widthMediaQuery);
 // Открытие/закрытие программ
+// программы Испанского
 const programSpanishTitle = document.querySelector(".programs__title--spanish");
-const programsSpanish = document.querySelector(".program__wrapper");
-programSpanishTitle.addEventListener("click", () => {
-  programSpanishTitle.classList.toggle("open");
+const programsSpanish = document.querySelector(".program__wrapper--spanish");
 
-  if (programSpanishTitle.classList.contains("open")) {
-    programsSpanish.classList.remove("close");
-    programsSpanish.classList.add("show");
-  } else {
-    programsSpanish.classList.remove("show");
-    programsSpanish.classList.add("close");
-  }
-});
+// const programsSpanish =
+//   programSpanishTitle.nextElementSibling.classList.contains("program__wrapper");
 
+// программы Английского
 const programEnglishTitle = document.querySelector(".programs__title--english");
-const programsEnglish = document.querySelector(".program__wrapper");
-programEnglishTitle.addEventListener("click", () => {
-  programEnglishTitle.classList.toggle("open");
+const programsEnglish = document.querySelector(".program__wrapper--english");
 
-  if (programEnglishTitle.classList.contains("open")) {
-    programsEnglish.classList.remove("close");
-    programsEnglish.classList.add("show");
-  } else {
-    programsEnglish.classList.remove("show");
-    programsEnglish.classList.add("close");
-  }
-});
+// const programsEnglish =
+//   programEnglishTitle.nextElementSibling.classList.contains("program__wrapper");
+
+if (widthMediaQuery) {
+  programsSpanish.classList.add("close");
+
+  programSpanishTitle.addEventListener("click", () => {
+    programSpanishTitle.classList.toggle("open");
+
+    if (programSpanishTitle.classList.contains("open")) {
+      programsSpanish.classList.remove("close");
+      programsSpanish.classList.add("show");
+    } else {
+      programsSpanish.classList.remove("show");
+      programsSpanish.classList.add("close");
+    }
+  });
+
+  programsEnglish.classList.add("close");
+
+  programEnglishTitle.addEventListener("click", () => {
+    programEnglishTitle.classList.toggle("open");
+
+    if (programEnglishTitle.classList.contains("open")) {
+      programsEnglish.classList.remove("close");
+      programsEnglish.classList.add("show");
+    } else {
+      programsEnglish.classList.remove("show");
+      programsEnglish.classList.add("close");
+    }
+  });
+}
 
 // слайдер Отзывы
