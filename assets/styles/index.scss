@@ -696,6 +696,10 @@ ul {
     border-bottom: 2px solid $blue;
     color: $blue;
 
+    @include mobile {
+      cursor: pointer;
+    }
+
     &::after {
       @include mobile {
         content: url("../images/icons/tick-blue.svg");
@@ -705,15 +709,15 @@ ul {
         transition: 0.4s ease;
       }
     }
-
-    @include mobile {
-      cursor: pointer;
-    }
   }
 
   &--english {
     border-bottom: 2px solid $green;
     color: $green;
+
+    @include mobile {
+      cursor: pointer;
+    }
 
     &::after {
       @include mobile {

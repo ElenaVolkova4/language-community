@@ -645,6 +645,11 @@ ul {
   color: #081685;
 }
 @media screen and (max-width: 767px) {
+  .programs__title--spanish {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 767px) {
   .programs__title--spanish::after {
     content: url("../images/icons/tick-blue.svg");
     display: inline-block;
@@ -653,14 +658,14 @@ ul {
     transition: 0.4s ease;
   }
 }
-@media screen and (max-width: 767px) {
-  .programs__title--spanish {
-    cursor: pointer;
-  }
-}
 .programs__title--english {
   border-bottom: 2px solid #3f4924;
   color: #3f4924;
+}
+@media screen and (max-width: 767px) {
+  .programs__title--english {
+    cursor: pointer;
+  }
 }
 @media screen and (max-width: 767px) {
   .programs__title--english::after {

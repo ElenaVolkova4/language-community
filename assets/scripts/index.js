@@ -43,29 +43,28 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoHeight: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  // autoHeight: false,
 });
 
 // Объединить в одну????????????????????????????????????
 
 // только на мобилке!!!!!
 const widthMediaQuery = window.matchMedia("(max-width: 767px)").matches;
-console.log(widthMediaQuery);
+
 // Открытие/закрытие программ
 // программы Испанского
 const programSpanishTitle = document.querySelector(".programs__title--spanish");
 const programsSpanish = document.querySelector(".program__wrapper--spanish");
 
-// const programsSpanish =
-//   programSpanishTitle.nextElementSibling.classList.contains("program__wrapper");
-
 // программы Английского
 const programEnglishTitle = document.querySelector(".programs__title--english");
 const programsEnglish = document.querySelector(".program__wrapper--english");
 
-// const programsEnglish =
-//   programEnglishTitle.nextElementSibling.classList.contains("program__wrapper");
-
+// window.addEventListener("resize", () => {
 if (widthMediaQuery) {
   programsSpanish.classList.add("close");
 
@@ -95,5 +94,6 @@ if (widthMediaQuery) {
     }
   });
 }
+// });
 
 // слайдер Отзывы
