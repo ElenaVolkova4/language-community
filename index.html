@@ -161,7 +161,7 @@
       <section class="about-me-slider">
         <div class="container">
           <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper mySwiper__wrapper">
               <div class="swiper-slide my-slide">
                 <p class="my-slide__text">
                   Моя история знакомства с&nbsp;иностранными языками началась
@@ -174,9 +174,21 @@
                   картинок в зависимости от ширины экрана -->
 
                   <picture>
-                    <source srcset="" media="(min-width:768px)" />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me1-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me1-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+
                     <img
-                      src="./assets/images/photos/my-slider/my-slider-1.png"
+                      src="./assets/images/photos/my-slider/about-me1-mobile.png"
                       alt="Моя фотография"
                       class="my-slide__img"
                       loading="lazy"
