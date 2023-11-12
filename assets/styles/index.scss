@@ -870,10 +870,13 @@ ul {
   margin-top: 80px;
 
   @include tablet {
+    grid-template-columns: 250px 1fr;
     grid-template-areas:
       "help-img text"
       "help-list help-list";
     column-gap: 28px;
+    align-items: center;
+
     margin-top: 24px;
   }
 
@@ -884,6 +887,7 @@ ul {
       "help-img"
       "help-list";
     row-gap: 32px;
+    justify-items: center;
   }
 }
 
