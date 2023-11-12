@@ -50,7 +50,6 @@ const swiper = new Swiper(".mySwiper", {
 
 // только на мобилке!!!!!
 const widthMediaQuery = window.matchMedia("(max-width: 767px)").matches;
-console.log(widthMediaQuery);
 // Открытие/закрытие программ
 // программы Испанского
 const programSpanishTitle = document.querySelector(".programs__title--spanish");
@@ -97,3 +96,15 @@ if (widthMediaQuery) {
 }
 
 // слайдер Отзывы
+
+// стрелка-скролл наверх
+const arrowTop = document.querySelector(".arrow-top");
+
+arrowTop.onclick = function () {
+  window.scrollTo(pageXOffset, 0);
+  // после scrollTo возникнет событие "scroll", так что стрелка автоматически скроется
+};
+
+window.addEventListener("scroll", function () {
+  arrowTop.hidden = pageYOffset < document.documentElement.clientHeight;
+});
