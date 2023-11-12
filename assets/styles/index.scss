@@ -60,6 +60,7 @@ ul {
 
   background-image: url("../images/bg/bg-header.png");
   background-repeat: no-repeat;
+  background-size: cover;
 
   .header__image {
     position: relative;
@@ -351,6 +352,7 @@ ul {
 .my-slide {
   display: flex;
   gap: 32px;
+  align-items: center;
 
   padding-right: 52px;
   padding-left: 52px;
@@ -362,6 +364,9 @@ ul {
 
     padding-top: 42px;
     padding-bottom: 24px;
+
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -381,12 +386,21 @@ ul {
 
   @include mobile {
     // padding: 0 26px 16px 26px;
-    padding: 0 26px 16px 0;
+    // padding: 0 26px 16px 0;
+    padding-top: 0;
+    padding-bottom: 16px;
+    text-align: center;
   }
+}
+
+.mySwiper__wrapper {
+  align-items: center;
 }
 
 .my-slide__img-wrapper {
   max-width: 350px;
+  flex-shrink: 0;
+
   // overflow: hidden;
 
   @include mobile {
@@ -696,6 +710,10 @@ ul {
     border-bottom: 2px solid $blue;
     color: $blue;
 
+    @include mobile {
+      cursor: pointer;
+    }
+
     &::after {
       @include mobile {
         content: url("../images/icons/tick-blue.svg");
@@ -705,15 +723,15 @@ ul {
         transition: 0.4s ease;
       }
     }
-
-    @include mobile {
-      cursor: pointer;
-    }
   }
 
   &--english {
     border-bottom: 2px solid $green;
     color: $green;
+
+    @include mobile {
+      cursor: pointer;
+    }
 
     &::after {
       @include mobile {
