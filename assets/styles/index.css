@@ -1031,7 +1031,7 @@ ul {
 }
 @media screen and (max-width: 991px) {
   .footer__note {
-    font-size: 120px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
