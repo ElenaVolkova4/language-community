@@ -665,6 +665,89 @@
       </section>
       <section class="container" id="feedback">
         <h2 class="title">Кейсы и отзывы</h2>
+        <section class="feedback__slider">
+          <div class="container">
+            <div class="swiper feedback-slider">
+              <div class="swiper-wrapper feedback-slider__wrapper">
+                <div class="swiper-slide feedback-slider__slide">
+                  <p class="my-slide__text">
+                    Моя история знакомства с&nbsp;иностранными языками началась
+                    еще в&nbsp;школе им.Пабло Неруды. И&nbsp;продолжилась
+                    на&nbsp;кафедре романо-германских языков в&nbsp;Московском
+                    Государственном Педагогическом Университете.
+                  </p>
+                  <div class="my-slide__img-wrapper">
+                    <!-- оборачиваем все картинки тегом picture и прописываем пути
+                    картинок в зависимости от ширины экрана -->
+
+                    <picture>
+                      <source
+                        srcset="
+                          ./assets/images/photos/my-slider/about-me1-tablet.png
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/photos/my-slider/about-me1-desktop.png
+                        "
+                        media="(min-width:991px)"
+                      />
+
+                      <img
+                        src="./assets/images/photos/my-slider/about-me1-mobile.png"
+                        alt="Моя фотография"
+                        class="my-slide__img"
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide feedback-slider__slideslide">
+                  <p class="my-slide__text">
+                    Прошла двухмесячную языковую практику на&nbsp;острове
+                    Майорка, Испания. Там я&nbsp;погрузилась в&nbsp;среду языка,
+                    смогла убрать &laquo;языковой барьер&raquo;, начать свободно
+                    разговаривать.
+                  </p>
+                  <div class="my-slide__img-wrapper">
+                    <picture>
+                      <source
+                        srcset="
+                          ./assets/images/photos/my-slider/about-me2-tablet.png
+                        "
+                        media="(min-width:768px)"
+                      />
+                      <source
+                        srcset="
+                          ./assets/images/photos/my-slider/about-me2-desktop.png
+                        "
+                        media="(min-width:991px)"
+                      />
+
+                      <img
+                        src="./assets/images/photos/my-slider/about-me2-mobile.png"
+                        alt="Моя фотография"
+                        class="my-slide__img"
+                        loading="lazy"
+                      />
+                    </picture>
+
+                    <!-- <img
+                      src="./assets/images/photos/my-slider/my-slider-2.png"
+                      alt="Фотография с Майорки, Испания"
+                      class="my-slide__img"
+                      loading="lazy"
+                    /> -->
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -698,15 +781,15 @@
         </div>
       </section>
       <section class="footer__content">
-        <h2 class="footer__title">WORLD LANGUAGE COMMUNITY</h2>
-        <div class="footer__img-wrapper">
+        <!-- <h2 class="footer__title">WORLD LANGUAGE COMMUNITY</h2> -->
+        <!-- <div class="footer__img-wrapper">
           <img
             class="footer__img-logo"
             src="./assets/images/logo.png"
             alt="Логотип"
             loading="lazy"
           />
-        </div>
+        </div> -->
 
         <p class="footer__note-content">
           <a
