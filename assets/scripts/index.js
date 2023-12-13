@@ -35,6 +35,7 @@ document.addEventListener("click", (event) => {
 
 // слайдер Обо мне
 const swiper = new Swiper(".mySwiper", {
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
     type: "fraction",

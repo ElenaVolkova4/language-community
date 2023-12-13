@@ -294,6 +294,7 @@ ul {
   }
 }
 
+// цитаты
 .quote {
   background-repeat: no-repeat;
   background-size: cover;
@@ -432,6 +433,17 @@ ul {
 .swiper-button-prev {
   @include mobile {
     left: -4px;
+  }
+}
+.mySwiper {
+  .swiper-pagination-fraction {
+    @include tablet {
+      left: -170px;
+    }
+
+    @include mobile {
+      left: 0;
+    }
   }
 }
 

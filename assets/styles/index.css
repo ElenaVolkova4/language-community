@@ -386,6 +386,17 @@ ul {
   }
 }
 
+@media screen and (max-width: 991px) {
+  .mySwiper .swiper-pagination-fraction {
+    left: -170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mySwiper .swiper-pagination-fraction {
+    left: 0;
+  }
+}
+
 .mission {
   display: flex;
   flex-direction: column;
