@@ -71,6 +71,11 @@ ul {
   transform: translate(-50%, -50%);
   width: 20%;
 }
+@media screen and (max-width: 767px) {
+  .header .header__img-logo {
+    width: 24%;
+  }
+}
 .header .header__text {
   padding-bottom: 27px;
   text-align: center;
@@ -134,9 +139,7 @@ ul {
   .menu-mobile {
     display: inline-block;
     text-align: right;
-    width: 300px;
     padding: 20px;
-    margin-right: auto;
     margin-left: auto;
   }
   .menu-mobile button {
@@ -149,8 +152,8 @@ ul {
 .menu-mobile__list {
   position: absolute;
   right: -20px;
-  top: 0;
-  width: 300px;
+  top: -23px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -1033,7 +1036,7 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .footer__img-wrapper {
-    max-width: 54px;
+    max-width: 90px;
   }
 }
 .footer__img-wrapper img {

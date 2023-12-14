@@ -79,6 +79,10 @@ ul {
     transform: translate(-50%, -50%);
 
     width: 20%;
+
+    @include mobile {
+      width: 24%;
+    }
   }
 
   .header__text {
@@ -148,9 +152,9 @@ ul {
   @include mobile {
     display: inline-block;
     text-align: right;
-    width: 300px;
+    // width: 300px;
     padding: 20px;
-    margin-right: auto;
+    // margin-right: auto;
     margin-left: auto;
 
     button {
@@ -164,9 +168,9 @@ ul {
 .menu-mobile__list {
   position: absolute;
   right: -20px;
-  top: 0;
+  top: -23px;
 
-  width: 300px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -1127,7 +1131,7 @@ ul {
   }
 
   @include mobile {
-    max-width: 54px;
+    max-width: 90px;
   }
 
   img {
