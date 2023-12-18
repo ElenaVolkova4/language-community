@@ -826,6 +826,10 @@ ul {
     }
   }
 
+  &--club {
+    background-color: #3f4924a8;
+  }
+
   ul {
     list-style-position: inside;
   }
@@ -860,6 +864,10 @@ ul {
     &:hover {
       background-color: rgba(63, 73, 36, 0.7);
     }
+  }
+
+  &--club {
+    // border: 2px solid $green;
   }
 }
 
@@ -1313,8 +1321,4 @@ ul {
   // width: 50px;
   // height: 50px;
   // opacity: 1;
-}
-
-// hover!
-.arrow-top--hide {
 }
