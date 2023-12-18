@@ -78,12 +78,11 @@
           </li>
         </ul>
         <div class="menu-mobile">
-          <button>
+          <button class="menu-mobile__btn">
             <svg
-              class="menu-mobile__btn"
               xmlns="http://www.w3.org/2000/svg"
-              width="33"
-              height="20"
+              width="40"
+              height="25"
               viewBox="0 0 33 20"
               fill="none"
             >
@@ -91,48 +90,40 @@
               <path d="M0 10H32.5" stroke="#081685" stroke-width="3" />
               <path d="M0 18H16.25H32.5" stroke="#081685" stroke-width="3" />
             </svg>
-            <ul class="menu-mobile__list hidden">
-              <svg
-                class="menu-mobile__btn-close"
-                width="30"
-                height="30"
-                viewBox="0 0 60 60"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
-                <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
-              </svg>
-              <li class="menu__item">
-                <a href="#about-me" class="menu__link" title="Обо мне"
-                  >¡Hola!</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="#about-project" class="menu__link" title=""
-                  >о&nbsp;проекте</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="#programs" class="menu__link" title="Программы"
-                  >программы</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="#opportunities" class="menu__link" title="Возможности"
-                  >возможности</a
-                >
-              </li>
-              <li class="menu__item">
-                <a href="#feedback" class="menu__link" title="Отзывы">отзывы</a>
-              </li>
-              <li class="menu__item">
-                <a href="#contacts" class="menu__link" title="Контакты"
-                  >контакты</a
-                >
-              </li>
-            </ul>
           </button>
+          <ul class="menu-mobile__list">
+            <svg
+              class="menu-mobile__btn-close"
+              width="30"
+              height="30"
+              viewBox="0 0 60 60"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
+              <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
+            </svg>
+            <li class="menu__item">
+              <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about-project" class="menu__link" title=""
+                >о&nbsp;проекте</a
+              >
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Программы">программы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Возможности">возможности</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link" title="Отзывы">отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link" title="Контакты">контакты</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -324,33 +315,12 @@
                   и&nbsp;даже в&nbsp;производстве.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me6-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me6-desktop.png
-                      "
-                      media="(min-width:991px)"
-                    />
-
-                    <img
-                      src="./assets/images/photos/my-slider/about-me6-mobile.png"
-                      alt="Моя фотография"
-                      class="my-slide__img"
-                      loading="lazy"
-                    />
-                  </picture>
-                  <!-- <img
+                  <img
                     src="./assets/images/photos/my-slider/my-slider-6.png"
                     alt="Фотография с мероприятия"
                     class="my-slide__img"
                     loading="lazy"
-                  /> -->
+                  />
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -360,27 +330,12 @@
                   и&nbsp;детей.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me7-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me7-desktop.png
-                      "
-                      media="(min-width:991px)"
-                    />
-
-                    <img
-                      src="./assets/images/photos/my-slider/about-me7-mobile.png"
-                      alt="Моя фотография"
-                      class="my-slide__img"
-                      loading="lazy"
-                    />
-                  </picture>
+                  <img
+                    src="./assets/images/photos/my-slider/my-slider-6.png"
+                    alt="Фотография с мероприятия"
+                    class="my-slide__img"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -392,26 +347,12 @@
                   сотрудникам финансовой компании ID&nbsp;Finance.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me8-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me8-desktop.png
-                      "
-                      media="(min-width:991px)"
-                    />
-                    <img
-                      src="./assets/images/photos/my-slider/about-me8-mobile.png"
-                      alt="Моя фотография"
-                      class="my-slide__img"
-                      loading="lazy"
-                    />
-                  </picture>
+                  <img
+                    src="./assets/images/photos/my-slider/my-slider-6.png"
+                    alt="Фотография с мероприятия"
+                    class="my-slide__img"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -425,27 +366,12 @@
                   в&nbsp;школе EnglishToGo в&nbsp;Лондоне.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <picture>
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me9-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me9-desktop.png
-                      "
-                      media="(min-width:991px)"
-                    />
-
-                    <img
-                      src="./assets/images/photos/my-slider/about-me9-desktop.png"
-                      alt="Моя фотография"
-                      class="my-slide__img"
-                      loading="lazy"
-                    />
-                  </picture>
+                  <img
+                    src="./assets/images/photos/my-slider/my-slider-6.png"
+                    alt="Фотография с мероприятия"
+                    class="my-slide__img"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
@@ -579,11 +505,8 @@
                   <li>средний уровень</li>
                   <li>продвинутый уровень</li>
                 </ul>
-                <!-- href="tg://resolve?domain=tigra_v_kletke&text=Привет!" -->
-                <!-- href="https://telegram.me/tigra_v_kletke?text=Привет!" -->
-
                 <a
-                  href="https://telegram.me/ant_vasina?text=Привет!"
+                  href="tg://resolve?domain=tigra_v_kletke&text=Привет!"
                   class="program__btn program__btn--spanish"
                   >Записаться</a
                 >
@@ -595,9 +518,8 @@
                 </p>
                 <!-- href="https://t.me/ant_vasina?start=Новички%20-%20Привет!%20Меня%20заинтересовал%20Авторский%20курс,%20могу%20я%20узнать%20подробности?" -->
                 <a
-                  href="https://telegram.me/ant_vasina/"
+                  href="tg://resolve?domain=ant_vasina&text=Привет!"
                   class="program__btn program__btn--spanish"
-                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -608,36 +530,27 @@
                   языка
                 </p>
                 <a
-                  href="https://telegram.me/ant_vasina/?"
+                  href="tg://resolve?domain=ant_vasina&text=Привет! Меня заинтересовала программа Subjuntivo - могу я узнать подробности?"
                   class="program__btn program__btn--spanish"
                   >Записаться</a
                 >
               </div>
 
               <div class="program__item program__item--spanish">
-                <p>
-                  Клуб изучения иностранных языков и культур, мотивация и
-                  поддержка
-                </p>
-                <a
-                  href="https://t.me/worldlanguagecommunity"
-                  class="program__btn program__btn--spanish program__btn--club"
-                  >Вступить&nbsp;в&nbsp;клуб</a
+                <p>Погружение в культуру, историю, литературу, кино</p>
+                <a href="" class="program__btn program__btn--spanish"
+                  >Записаться</a
                 >
               </div>
               <div class="program__item program__item--spanish">
                 <p>Язык для путешествий</p>
-                <a
-                  href="https://telegram.me/ant_vasina/"
-                  class="program__btn program__btn--spanish"
+                <a href="" class="program__btn program__btn--spanish"
                   >Записаться</a
                 >
               </div>
               <div class="program__item program__item--spanish">
                 <p>Язык для бизнеса</p>
-                <a
-                  href="https://telegram.me/ant_vasina/"
-                  class="program__btn program__btn--spanish"
+                <a href="" class="program__btn program__btn--spanish"
                   >Записаться</a
                 >
               </div>
@@ -654,25 +567,19 @@
                   <li>начальный уровень</li>
                   <li>средний уровень</li>
                 </ul>
-                <a
-                  href="https://telegram.me/ant_vasina/"
-                  class="program__btn program__btn--english"
+                <a href="" class="program__btn program__btn--english"
                   >Записаться</a
                 >
               </div>
               <div class="program__item program__item--english">
                 <p>Уроки для детей и подростков</p>
-                <a
-                  href="https://telegram.me/ant_vasina/"
-                  class="program__btn program__btn--english"
+                <a href="" class="program__btn program__btn--english"
                   >Записаться</a
                 >
               </div>
               <div class="program__item program__item--english">
                 <p>Язык для путешествий</p>
-                <a
-                  href="https://telegram.me/ant_vasina/"
-                  class="program__btn program__btn--english"
+                <a href="" class="program__btn program__btn--english"
                   >Записаться</a
                 >
               </div>
@@ -740,17 +647,7 @@
 
           <div class="getting-know">
             <p class="getting-know__title">Знакомство с преподавателем*</p>
-
-            <!-- href="tg://resolve?domain=tigra_v_kletke&text=Привет!" -->
-            <!-- href="https://telegram.me/tigra_v_kletke?text=Привет!" -->
-
-            <a
-              href="https://telegram.me/ant_vasina?text=Привет!"
-              class="getting-know__btn"
-              target="_blank"
-              >Записаться</a
-            >
-
+            <a href="" class="getting-know__btn">Записаться</a>
             <p class="getting-know__note">
               *беседа с&nbsp;преподавателем: 10&nbsp;минут бесплатного живого
               диалога
@@ -765,89 +662,6 @@
       </section>
       <section class="container" id="feedback">
         <h2 class="title">Кейсы и отзывы</h2>
-        <section class="feedback__slider">
-          <div class="container">
-            <div class="swiper feedback-slider">
-              <div class="swiper-wrapper feedback-slider__wrapper">
-                <div class="swiper-slide feedback-slider__slide">
-                  <p class="my-slide__text">
-                    Моя история знакомства с&nbsp;иностранными языками началась
-                    еще в&nbsp;школе им.Пабло Неруды. И&nbsp;продолжилась
-                    на&nbsp;кафедре романо-германских языков в&nbsp;Московском
-                    Государственном Педагогическом Университете.
-                  </p>
-                  <div class="my-slide__img-wrapper">
-                    <!-- оборачиваем все картинки тегом picture и прописываем пути
-                    картинок в зависимости от ширины экрана -->
-
-                    <picture>
-                      <source
-                        srcset="
-                          ./assets/images/photos/my-slider/about-me1-tablet.png
-                        "
-                        media="(min-width:768px)"
-                      />
-                      <source
-                        srcset="
-                          ./assets/images/photos/my-slider/about-me1-desktop.png
-                        "
-                        media="(min-width:991px)"
-                      />
-
-                      <img
-                        src="./assets/images/photos/my-slider/about-me1-mobile.png"
-                        alt="Моя фотография"
-                        class="my-slide__img"
-                        loading="lazy"
-                      />
-                    </picture>
-                  </div>
-                </div>
-                <div class="swiper-slide feedback-slider__slideslide">
-                  <p class="my-slide__text">
-                    Прошла двухмесячную языковую практику на&nbsp;острове
-                    Майорка, Испания. Там я&nbsp;погрузилась в&nbsp;среду языка,
-                    смогла убрать &laquo;языковой барьер&raquo;, начать свободно
-                    разговаривать.
-                  </p>
-                  <div class="my-slide__img-wrapper">
-                    <picture>
-                      <source
-                        srcset="
-                          ./assets/images/photos/my-slider/about-me2-tablet.png
-                        "
-                        media="(min-width:768px)"
-                      />
-                      <source
-                        srcset="
-                          ./assets/images/photos/my-slider/about-me2-desktop.png
-                        "
-                        media="(min-width:991px)"
-                      />
-
-                      <img
-                        src="./assets/images/photos/my-slider/about-me2-mobile.png"
-                        alt="Моя фотография"
-                        class="my-slide__img"
-                        loading="lazy"
-                      />
-                    </picture>
-
-                    <!-- <img
-                      src="./assets/images/photos/my-slider/my-slider-2.png"
-                      alt="Фотография с Майорки, Испания"
-                      class="my-slide__img"
-                      loading="lazy"
-                    /> -->
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </section>
       </section>
     </main>
 
@@ -864,7 +678,7 @@
 
           <div class="contacts__social-wrapper">
             <a
-              href="https://telegram.me/ant_vasina/"
+              href="https://t.me/worldlanguagecommunity"
               class="contacts__social-tg"
               target="_blank"
               ><img

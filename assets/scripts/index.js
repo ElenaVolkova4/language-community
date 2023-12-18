@@ -6,31 +6,44 @@ const menuBtnClose = document.querySelector(".menu-mobile__btn-close");
 
 // открытие меню
 menuBtn.addEventListener("click", () => {
-  mobileMenu.classList.remove("hidden");
-  mobileMenu.classList.add("show");
+  // mobileMenu.classList.remove("hidden");
+  // mobileMenu.classList.add("show");
+  mobileMenu.classList.toggle("show");
 });
 
 // закрытие меню при нажатии на ссылку в меню
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.classList.remove("show");
-    mobileMenu.classList.add("hidden");
+    // mobileMenu.classList.add("hidden");
   });
 });
 
 // закрытие меню при клике на крестик
 menuBtnClose.addEventListener("click", () => {
   mobileMenu.classList.remove("show");
-  mobileMenu.classList.add("hidden");
+  // mobileMenu.classList.add("hidden");
 });
 
 // закрытие меню при клике на любую область за его пределами
+// document.addEventListener("click", (event) => {
+//   const target = event.target;
+//   if (!mobileMenu.contains(target) && target !== menuBtn) {
+//     mobileMenu.classList.remove("show");
+//     mobileMenu.classList.add("hidden");
+//   }
+// });
+
 document.addEventListener("click", (event) => {
-  const target = event.target;
-  if (!mobileMenu.contains(target) && target !== menuBtn) {
-    mobileMenu.classList.remove("show");
-    mobileMenu.classList.add("hidden");
+  // Проверяем, был ли клик на кнопке меню или на ее дочерних элементах
+  if (
+    event.target.closest(".menu-mobile__btn") ||
+    event.target.closest(".menu-mobile__btn svg")
+  ) {
+    return;
   }
+  // Если клик произошел вне кнопки меню, скрываем меню
+  mobileMenu.classList.remove("show");
 });
 
 // слайдер Обо мне

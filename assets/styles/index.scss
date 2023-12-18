@@ -166,9 +166,11 @@ ul {
 }
 
 .menu-mobile__list {
+  visibility: hidden;
+
   position: absolute;
-  right: -20px;
-  top: -23px;
+  right: 0px;
+  top: 281px;
 
   width: 320px;
   display: flex;
@@ -191,9 +193,9 @@ ul {
   transform: translateY(0);
 }
 
-.hidden {
-  visibility: hidden;
-}
+// .hidden {
+//   visibility: hidden;
+// }
 
 .menu-mobile__btn-close {
   margin-left: auto;
