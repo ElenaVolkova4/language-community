@@ -356,24 +356,73 @@ ul {
 }
 
 // слайдер "Обо мне"
+
+.mySwiper {
+  .swiper-pagination-fraction {
+    left: -127px;
+
+    @include tablet {
+      left: -5px;
+    }
+
+    @include mobile {
+      left: 0;
+    }
+  }
+}
+
 .my-slide {
   display: flex;
   gap: 32px;
   align-items: center;
 
-  padding-right: 52px;
-  padding-left: 52px;
+  height: 300px;
+
+  padding-right: 60px;
+  padding-left: 60px;
+
+  @include tablet {
+    height: 490px;
+  }
 
   @include mobile {
     flex-direction: column-reverse;
     align-items: center;
     gap: 16px;
+    justify-content: center;
+
+    height: 580px;
 
     padding-top: 42px;
     padding-bottom: 24px;
 
     padding-right: 20px;
     padding-left: 20px;
+  }
+
+  &--mexico {
+    .my-slide__img-wrapper {
+      max-width: 478px;
+
+      @include tablet {
+        max-width: none;
+      }
+    }
+
+    .my-slide__text {
+      @include tablet {
+        padding-top: 0;
+        padding-bottom: 16px;
+        text-align: center;
+      }
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 16px;
+      justify-content: center;
+    }
   }
 }
 
@@ -419,6 +468,12 @@ ul {
     height: 100%;
     object-fit: cover;
   }
+
+  &--without-mobile {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .swiper-button-next,
@@ -439,17 +494,6 @@ ul {
 .swiper-button-prev {
   @include mobile {
     left: -4px;
-  }
-}
-.mySwiper {
-  .swiper-pagination-fraction {
-    @include tablet {
-      left: -170px;
-    }
-
-    @include mobile {
-      left: 0;
-    }
   }
 }
 

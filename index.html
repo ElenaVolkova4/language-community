@@ -179,21 +179,18 @@
                   Государственном Педагогическом Университете.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <!-- оборачиваем все картинки тегом picture и прописываем пути
-                  картинок в зависимости от ширины экрана -->
-
                   <picture>
-                    <source
-                      srcset="
-                        ./assets/images/photos/my-slider/about-me1-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
                     <source
                       srcset="
                         ./assets/images/photos/my-slider/about-me1-desktop.png
                       "
                       media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me1-tablet.png
+                      "
+                      media="(min-width:768px)"
                     />
 
                     <img
@@ -216,17 +213,16 @@
                   <picture>
                     <source
                       srcset="
-                        ./assets/images/photos/my-slider/about-me2-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
                         ./assets/images/photos/my-slider/about-me2-desktop.png
                       "
                       media="(min-width:991px)"
                     />
-
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me2-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
                     <img
                       src="./assets/images/photos/my-slider/about-me2-mobile.png"
                       alt="Моя фотография"
@@ -234,13 +230,6 @@
                       loading="lazy"
                     />
                   </picture>
-
-                  <!-- <img
-                    src="./assets/images/photos/my-slider/my-slider-2.png"
-                    alt="Фотография с Майорки, Испания"
-                    class="my-slide__img"
-                    loading="lazy"
-                  /> -->
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -253,26 +242,55 @@
                   по&nbsp;городам России.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-3.jpeg"
-                    alt="Фотография с мероприятия посольства Мексики"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me3-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me3-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <img
+                      src="./assets/images/photos/my-slider/about-me4-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
-              <div class="swiper-slide my-slide">
+              <div class="swiper-slide my-slide my-slide--mexico">
                 <p class="my-slide__text">
                   В&nbsp;посольстве я&nbsp;приобрела большой опыт письменного,
                   устного, последовательного и&nbsp;синхронного перевода.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-4.jpeg"
-                    alt="Фотография с мероприятия посольства Мексики"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me4-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me4-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <img
+                      src="./assets/images/photos/my-slider/about-me3-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -288,15 +306,15 @@
                   <picture>
                     <source
                       srcset="
-                        ./assets/images/photos/my-slider/about-me5-tablet.png
-                      "
-                      media="(min-width:768px)"
-                    />
-                    <source
-                      srcset="
                         ./assets/images/photos/my-slider/about-me5-desktop.png
                       "
                       media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me5-tablet.png
+                      "
+                      media="(min-width:768px)"
                     />
 
                     <img
@@ -306,12 +324,6 @@
                       loading="lazy"
                     />
                   </picture>
-                  <!-- <img
-                    src="./assets/images/photos/my-slider/my-slider-5.png"
-                    alt="Фотография с мероприятия испанской консалтинговой компании"
-                    class="my-slide__img"
-                    loading="lazy"
-                  /> -->
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -321,12 +333,27 @@
                   и&nbsp;даже в&nbsp;производстве.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-6.png"
-                    alt="Фотография с мероприятия"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me6-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me6-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <img
+                      src="./assets/images/photos/my-slider/about-me6-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -336,12 +363,27 @@
                   и&nbsp;детей.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-6.png"
-                    alt="Фотография с мероприятия"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me7-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me7-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <img
+                      src="./assets/images/photos/my-slider/about-me7-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -353,12 +395,27 @@
                   сотрудникам финансовой компании ID&nbsp;Finance.
                 </p>
                 <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-6.png"
-                    alt="Фотография с мероприятия"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me8-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me8-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <img
+                      src="./assets/images/photos/my-slider/about-me8-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
               <div class="swiper-slide my-slide">
@@ -371,13 +428,30 @@
                   В&nbsp;2019 году прошла двухнедельную практику языка
                   в&nbsp;школе EnglishToGo в&nbsp;Лондоне.
                 </p>
-                <div class="my-slide__img-wrapper">
-                  <img
-                    src="./assets/images/photos/my-slider/my-slider-6.png"
-                    alt="Фотография с мероприятия"
-                    class="my-slide__img"
-                    loading="lazy"
-                  />
+                <div
+                  class="my-slide__img-wrapper my-slide__img-wrapper--without-mobile"
+                >
+                  <picture>
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me9-desktop.png
+                      "
+                      media="(min-width:991px)"
+                    />
+                    <source
+                      srcset="
+                        ./assets/images/photos/my-slider/about-me9-tablet.png
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <img
+                      src="./assets/images/photos/my-slider/about-me9-mobile.png"
+                      alt="Моя фотография"
+                      class="my-slide__img"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -398,7 +472,7 @@
       </section>
       <section class="mission container" id="about-project">
         <h2 class="title">Миссия и&nbsp;цели проекта</h2>
-        <h3>Помощь людям в&nbsp;достжении своей мечты!</h3>
+        <h3>Помощь людям в&nbsp;достижении своей мечты!</h3>
         <p>
           Объединение людей в&nbsp;языковом пространстве: объяснение логики
           изучаемого языка, особенностей мышления и&nbsp;культурно-cоциального
@@ -500,7 +574,6 @@
         <div class="programs__wrapper">
           <div class="programs__spanish">
             <h3 class="programs__title programs__title--spanish">Испанский</h3>
-
             <div class="program__wrapper program__wrapper--spanish">
               <div
                 class="program__item program__item--spanish program__item--left-text"
