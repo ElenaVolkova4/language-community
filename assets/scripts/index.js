@@ -123,3 +123,33 @@ arrowTop.onclick = function () {
 window.addEventListener("scroll", function () {
   arrowTop.hidden = pageYOffset < document.documentElement.clientHeight;
 });
+
+// слайдер Кейсы и отзывы
+const feedbackSwiper = new Swiper(".feedbackSwiper", {
+  loop: false,
+
+  navigation: {
+    nextEl: ".swiper-feedback-button-next",
+    prevEl: ".swiper-feedback-button-prev",
+  },
+  slidesPerView: 3, // количетсво слайдов
+  spaceBetween: 30, // расстояние между слайдами
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  // autoHeight: false,
+  // Responsive breakpoints
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});

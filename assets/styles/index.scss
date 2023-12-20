@@ -1093,6 +1093,100 @@ ul {
   }
 }
 
+// Кейсы и отзывы
+
+.feedback__title {
+  margin-top: 64px;
+  margin-bottom: 48px;
+
+  @include mobile {
+    margin-bottom: 32px;
+  }
+}
+
+// слайдер Кейсы и отзывы
+.feedback-slider {
+  position: relative;
+  margin-bottom: 124px;
+
+  @include tablet {
+    margin-bottom: 84px;
+  }
+
+  @include mobile {
+    margin-bottom: 54px;
+  }
+
+  .swiper-button-next {
+    right: -2px;
+  }
+
+  .swiper-button-prev {
+    left: -2px;
+  }
+}
+
+.feedbackSwiper__img-wrapper {
+  width: 115px;
+  height: 115px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.feedbackSwiper__slide {
+  width: 350px;
+  height: 512px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  overflow: scroll;
+  overflow-y: scroll;
+
+  border: 1px solid $black;
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 10px;
+  }
+}
+
+.feedbackSwiper__name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.feedbackSwiper__text {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+// Контакты
 .contacts__content {
   padding: 33px;
 
