@@ -126,7 +126,7 @@ window.addEventListener("scroll", function () {
 
 // слайдер Кейсы и отзывы
 const feedbackSwiper = new Swiper(".feedbackSwiper", {
-  loop: false,
+  loop: true,
 
   navigation: {
     nextEl: ".swiper-feedback-button-next",
