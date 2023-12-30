@@ -72,39 +72,59 @@ const widthMediaQuery = window.matchMedia("(max-width: 767px)").matches;
 // Открытие/закрытие программ
 // программы Испанского
 const programSpanishTitle = document.querySelector(".programs__title--spanish");
-const programsSpanish = document.querySelector(".program__wrapper--spanish");
+const programSpanish = document.querySelector(".program__wrapper--spanish");
 
 // программы Английского
 const programEnglishTitle = document.querySelector(".programs__title--english");
-const programsEnglish = document.querySelector(".program__wrapper--english");
+const programEnglish = document.querySelector(".program__wrapper--english");
+
+// программа Клуб
+const programClubTitle = document.querySelector(
+  ".programs__title--club-mobile"
+);
+const programClub = document.querySelector(".program__wrapper--club-mobile");
 
 // window.addEventListener("resize", () => {
 if (widthMediaQuery) {
-  programsSpanish.classList.add("close");
+  programSpanish.classList.add("close");
 
   programSpanishTitle.addEventListener("click", () => {
     programSpanishTitle.classList.toggle("open");
 
     if (programSpanishTitle.classList.contains("open")) {
-      programsSpanish.classList.remove("close");
-      programsSpanish.classList.add("show");
+      programSpanish.classList.remove("close");
+      programSpanish.classList.add("show");
     } else {
-      programsSpanish.classList.remove("show");
-      programsSpanish.classList.add("close");
+      programSpanish.classList.remove("show");
+      programSpanish.classList.add("close");
     }
   });
 
-  programsEnglish.classList.add("close");
+  programEnglish.classList.add("close");
 
   programEnglishTitle.addEventListener("click", () => {
     programEnglishTitle.classList.toggle("open");
 
     if (programEnglishTitle.classList.contains("open")) {
-      programsEnglish.classList.remove("close");
-      programsEnglish.classList.add("show");
+      programEnglish.classList.remove("close");
+      programEnglish.classList.add("show");
     } else {
-      programsEnglish.classList.remove("show");
-      programsEnglish.classList.add("close");
+      programEnglish.classList.remove("show");
+      programEnglish.classList.add("close");
+    }
+  });
+
+  programClub.classList.add("close");
+
+  programClubTitle.addEventListener("click", () => {
+    programClubTitle.classList.toggle("open");
+
+    if (programClubTitle.classList.contains("open")) {
+      programClub.classList.remove("close");
+      programClub.classList.add("show");
+    } else {
+      programClub.classList.remove("show");
+      programClub.classList.add("close");
     }
   });
 }

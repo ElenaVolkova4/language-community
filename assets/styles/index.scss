@@ -393,7 +393,7 @@ ul {
 
     height: 580px;
 
-    padding-top: 42px;
+    padding-top: 32px;
     padding-bottom: 24px;
 
     padding-right: 20px;
@@ -445,7 +445,6 @@ ul {
     // padding: 0 26px 16px 0;
     padding-top: 0;
     padding-bottom: 16px;
-    text-align: center;
   }
 }
 
@@ -801,7 +800,8 @@ ul {
   }
 
   &--spanish.open,
-  &--english.open {
+  &--english.open,
+  &--club-mobile.open {
     &::after {
       @include mobile {
         transform: rotate(90deg);
@@ -827,6 +827,7 @@ ul {
   width: 337px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
   padding: 30px 28px;
 
@@ -865,16 +866,24 @@ ul {
   }
 
   &--club {
-    background-color: #3f4924a8;
+    padding: 30px 11px;
+
+    border: 2px solid #c20000;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   ul {
     list-style-position: inside;
+    padding: 0;
   }
 }
 
 .program__btn {
   cursor: pointer;
+  width: 255px;
   text-align: center;
   text-decoration: none;
   color: $white;
@@ -882,7 +891,7 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 8px 71px;
+  padding: 8px 49px;
 
   @include mobile {
     padding: 8px 32px;
@@ -905,8 +914,44 @@ ul {
   }
 
   &--club {
-    // border: 2px solid $green;
+    background: $red;
+
+    &:hover {
+      background: rgba(194, 0, 0, 0.7);
+    }
   }
+}
+
+.programs__club-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+
+    cursor: pointer;
+  }
+}
+
+.programs__title--club-mobile {
+  color: $red;
+  border-bottom: 2px solid $red;
+
+  &::after {
+    content: url("../images/icons/tick-red.svg");
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s ease;
+  }
+}
+
+.program__item--club-mobile {
+  padding: 24px 10px;
+  border: 2px solid $red;
+}
+
+.program__btn--club-mobile {
+  background-color: $red;
 }
 
 .help {
