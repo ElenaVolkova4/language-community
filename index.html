@@ -91,7 +91,7 @@
               <path d="M0 18H16.25H32.5" stroke="#081685" stroke-width="3" />
             </svg>
           </button>
-          <ul class="menu-mobile__list">
+          <div class="menu-mobile__list-wrapper">
             <svg
               class="menu-mobile__btn-close"
               width="30"
@@ -103,33 +103,37 @@
               <path d="M15 15L45 45" stroke="#081685" stroke-width="3" />
               <path d="M45 15L15 45" stroke="#081685" stroke-width="3" />
             </svg>
-            <li class="menu__item">
-              <a href="#about-me" class="menu__link" title="Обо мне">¡Hola!</a>
-            </li>
-            <li class="menu__item">
-              <a href="#about-project" class="menu__link" title=""
-                >о&nbsp;проекте</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#programs" class="menu__link" title="Программы"
-                >программы</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#opportunities" class="menu__link" title="Возможности"
-                >возможности</a
-              >
-            </li>
-            <li class="menu__item">
-              <a href="#feedback" class="menu__link" title="Отзывы">отзывы</a>
-            </li>
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link" title="Контакты"
-                >контакты</a
-              >
-            </li>
-          </ul>
+            <ul class="menu-mobile__list">
+              <li class="menu__item">
+                <a href="#about-me" class="menu__link" title="Обо мне"
+                  >¡Hola!</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#about-project" class="menu__link" title=""
+                  >о&nbsp;проекте</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#programs" class="menu__link" title="Программы"
+                  >программы</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#opportunities" class="menu__link" title="Возможности"
+                  >возможности</a
+                >
+              </li>
+              <li class="menu__item">
+                <a href="#feedback" class="menu__link" title="Отзывы">отзывы</a>
+              </li>
+              <li class="menu__item">
+                <a href="#contacts" class="menu__link" title="Контакты"
+                  >контакты</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -532,43 +536,12 @@
           </div>
           <div class="reasons__list">
             <ul>
-              <!-- ПЕРЕДЕЛАТЬ на before!!!! -->
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />работы&nbsp;и&nbsp;бизнеса,
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />релокации,
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />сдачи&nbsp;экзаменов,
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />расширения&nbsp;кругозора,
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />путешествий,
-              </li>
-              <li>
-                <img
-                  src="./assets/images/icons/tick.svg"
-                  alt="&#10004;"
-                />новых&nbsp;знакомств.
-              </li>
+              <li>работы&nbsp;и&nbsp;бизнеса,</li>
+              <li>релокации,</li>
+              <li>сдачи&nbsp;экзаменов,</li>
+              <li>расширения&nbsp;кругозора,</li>
+              <li>путешествий,</li>
+              <li>новых&nbsp;знакомств.</li>
             </ul>
           </div>
           <div class="reasons__img-wrapper reasons__img-wrapper--right">
@@ -598,15 +571,18 @@
               <div
                 class="program__item program__item--spanish program__item--left-text"
               >
-                <ul>
-                  Базовый язык:
-                  <li>начальный уровень</li>
-                  <li>средний уровень</li>
-                  <li>продвинутый уровень</li>
-                </ul>
+                <div>
+                  <p>Базовый язык:</p>
+                  <ul>
+                    <li>начальный уровень</li>
+                    <li>средний уровень</li>
+                    <li>продвинутый уровень</li>
+                  </ul>
+                </div>
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--spanish"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -618,6 +594,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--spanish"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -630,6 +607,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--spanish"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -638,6 +616,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--spanish"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -646,6 +625,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--spanish"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -659,6 +639,7 @@
                 <a
                   href="https://t.me/worldlanguagecommunity"
                   class="program__btn program__btn--spanish program__btn--club"
+                  target="_blank"
                   >Вступить&nbsp;в&nbsp;клуб</a
                 >
               </div>
@@ -670,14 +651,17 @@
               <div
                 class="program__item program__item--english program__item--left-text program__item--order3"
               >
-                <ul>
-                  Базовый язык:
-                  <li>начальный уровень</li>
-                  <li>средний уровень</li>
-                </ul>
+                <div>
+                  <p>Базовый язык:</p>
+                  <ul>
+                    <li>начальный уровень</li>
+                    <li>средний уровень</li>
+                  </ul>
+                </div>
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--english"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -686,6 +670,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--english"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -694,6 +679,7 @@
                 <a
                   href="https://telegram.me/ant_vasina/"
                   class="program__btn program__btn--english"
+                  target="_blank"
                   >Записаться</a
                 >
               </div>
@@ -712,6 +698,7 @@
                 <a
                   href="https://t.me/worldlanguagecommunity"
                   class="program__btn program__btn--club-mobile"
+                  target="_blank"
                   >Вступить&nbsp;в&nbsp;клуб</a
                 >
               </div>
@@ -777,7 +764,12 @@
 
           <div class="getting-know">
             <p class="getting-know__title">Знакомство с преподавателем*</p>
-            <a href="" class="getting-know__btn">Записаться</a>
+            <a
+              href="https://telegram.me/ant_vasina/"
+              class="getting-know__btn"
+              target="_blank"
+              >Записаться</a
+            >
             <p class="getting-know__note">
               *беседа с&nbsp;преподавателем: 10&nbsp;минут бесплатного живого
               диалога

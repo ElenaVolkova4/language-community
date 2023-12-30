@@ -1,6 +1,6 @@
 // работа кнопки меню
 const menuBtn = document.querySelector(".menu-mobile__btn");
-const mobileMenu = document.querySelector(".menu-mobile__list");
+const mobileMenu = document.querySelector(".menu-mobile__list-wrapper");
 const menuLinks = document.querySelectorAll(".menu__link");
 const menuBtnClose = document.querySelector(".menu-mobile__btn-close");
 
@@ -15,14 +15,12 @@ menuBtn.addEventListener("click", () => {
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenu.classList.remove("show");
-    // mobileMenu.classList.add("hidden");
   });
 });
 
 // закрытие меню при клике на крестик
 menuBtnClose.addEventListener("click", () => {
   mobileMenu.classList.remove("show");
-  // mobileMenu.classList.add("hidden");
 });
 
 // закрытие меню при клике на любую область за его пределами
@@ -57,10 +55,10 @@ const swiper = new Swiper(".mySwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // autoplay: {
-  //   delay: 4000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
   // autoHeight: false,
 });
 
@@ -128,7 +126,6 @@ if (widthMediaQuery) {
     }
   });
 }
-// });
 
 // слайдер Отзывы
 

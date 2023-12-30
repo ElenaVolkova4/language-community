@@ -161,12 +161,15 @@ ul {
   }
 }
 
-.menu-mobile__list {
+.menu-mobile__list-wrapper {
   visibility: hidden;
   position: absolute;
   right: 0px;
   top: 267px;
   width: 320px;
+}
+
+.menu-mobile__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -188,6 +191,10 @@ ul {
 .menu-mobile__btn-close {
   margin-left: auto;
   cursor: pointer;
+  position: absolute;
+  top: -33px;
+  right: 10px;
+  z-index: 999999;
 }
 
 .about-me {
@@ -663,6 +670,13 @@ ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.reasons__list li::before {
+  content: url("../images/icons/tick.svg");
+  display: inline-block;
+  width: 26px;
+  height: 25px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1299,7 +1313,6 @@ ul {
 .footer__title {
   color: #f8f0ec;
   margin-left: 300px;
-  /* Shadow 1 */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
   font-family: "Yandex-Serif", sans-serif;
   font-size: 42px;
