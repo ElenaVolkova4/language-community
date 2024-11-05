@@ -494,6 +494,20 @@ ul {
     gap: 24px;
   }
 
+  .mission__title {
+    text-align: center;
+    font-family: $yandex-font;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
   h3 {
     font-family: $yandex-font;
     font-size: 32px;

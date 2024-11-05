@@ -500,6 +500,22 @@ ul {
   }
 }
 
+.mission .mission__title {
+  text-align: center;
+  font-family: "Yandex-Serif", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 767px) {
+  .mission .mission__title {
+    font-size: 26px;
+  }
+}
+
 .mission h3 {
   font-family: "Yandex-Serif", sans-serif;
   font-size: 32px;
