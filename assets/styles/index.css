@@ -1282,6 +1282,27 @@ ul {
   }
 }
 
+.feedbackWhatsAppSwiper__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackWhatsAppSwiper__img-wrapper {
+  width: 290px;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .feedbackWhatsAppSwiper__img-wrapper {
+    width: 200px;
+  }
+}
+
+.feedbackWhatsAppSwiper__img-wrapper img {
+  width: 100%;
+}
+
 .contacts__content {
   padding: 33px;
   display: flex;

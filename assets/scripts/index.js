@@ -56,7 +56,7 @@ const swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 4000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   // autoHeight: false,
@@ -127,8 +127,6 @@ if (widthMediaQuery) {
   });
 }
 
-// слайдер Отзывы
-
 // стрелка-скролл наверх
 const arrowTop = document.querySelector(".arrow-top");
 
@@ -149,7 +147,37 @@ const feedbackSwiper = new Swiper(".feedbackSwiper", {
     nextEl: ".swiper-feedback-button-next",
     prevEl: ".swiper-feedback-button-prev",
   },
-  slidesPerView: 3, // количетсво слайдов
+  slidesPerView: 3, // количество слайдов
+  spaceBetween: 30, // расстояние между слайдами
+  // autoplay: {
+  //   delay: 4000,
+  //   disableOnInteraction: false,
+  // },
+  // autoHeight: false,
+  // Responsive breakpoints
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// слайдер Кейсы и отзывы
+const feedbackWhatsAppSwiper = new Swiper(".feedbackWhatsAppSwiper", {
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-feedback-whatsApp-button-next",
+    prevEl: ".swiper-feedback-whatsApp-button-prev",
+  },
+  slidesPerView: 3, // количество слайдов
   spaceBetween: 30, // расстояние между слайдами
   // autoplay: {
   //   delay: 4000,

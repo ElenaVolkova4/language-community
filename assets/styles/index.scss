@@ -1221,6 +1221,7 @@ ul {
     font-size: 18px;
   }
 }
+
 .feedbackSwiper__text {
   font-size: 18px;
   font-style: normal;
@@ -1229,6 +1230,25 @@ ul {
 
   @include mobile {
     font-size: 12px;
+  }
+}
+
+.feedbackWhatsAppSwiper__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackWhatsAppSwiper__img-wrapper {
+  width: 290px;
+  height: auto;
+
+  @include mobile {
+    width: 200px;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
