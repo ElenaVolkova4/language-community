@@ -497,11 +497,10 @@ ul {
   .mission__title {
     text-align: center;
     font-family: $yandex-font;
-    font-size: 36px;
+    font-size: 44px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     line-height: normal;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
 
     @include mobile {
       font-size: 26px;
